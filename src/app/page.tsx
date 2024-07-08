@@ -1,5 +1,5 @@
 const App = () => {
-  return <div>Gagi</div>;
+  return <div className="font-poppins ml-2 text-lg">Gagi</div>;
 };
 
 export default App;
