@@ -4,7 +4,7 @@ const Logo: React.FC = () => {
   return (
     <div>
       <Image
-        src="logo/logo.svg"
+        src="/logo/Logotech.png"
         width={102}
         height={32}
         alt="logo"
