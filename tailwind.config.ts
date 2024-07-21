@@ -42,6 +42,9 @@ const config: Config = {
       height: {
         "91": "91px",
       },
+      screens: {
+        xs: "320px",
+      },
     },
   },
   plugins: [],

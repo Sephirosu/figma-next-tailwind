@@ -4,7 +4,7 @@ const SearchInputs: React.FC<{ openModal: () => void }> = ({ openModal }) => {
   return (
     <div
       onClick={openModal}
-      className="h-16 mt-3.5 text-sm flex items-center mx-10 shadow-lg border rounded-full  w-46 "
+      className="h-16 mt-3.5 xs:text-[12px] sm:text-sm text-sm flex items-center mx-10 shadow-lg border rounded-full  w-46 "
     >
       <button>
         <BiSearch className="w-8 h-8 ml-5 " />
