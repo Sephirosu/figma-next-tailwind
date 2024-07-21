@@ -33,7 +33,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"], // Corrected the name to lowercase
+        poppins: ["Poppins", "sans-serif"],
       },
       spacing: {
         "21": "21px",
@@ -43,6 +43,7 @@ const config: Config = {
         "91": "91px",
       },
       screens: {
+        xxs: "280px",
         xs: "320px",
       },
     },
