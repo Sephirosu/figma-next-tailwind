@@ -9,7 +9,6 @@ const Logo: React.FC = () => {
         height={32}
         alt="logo"
         className="mt-21"
-        priority
       />
     </div>
   );
