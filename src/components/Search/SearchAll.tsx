@@ -5,21 +5,23 @@ import Search from "./SearchNormal/Search";
 import Searchsmall from "./SearchSmall/Searchsmall";
 
 const SearchAll: React.FC = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(
-    window.innerWidth <= 768
-  );
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    setLoading(false); // pretpostavljas sto :D
-
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 768);
     };
 
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    setLoading(false);
   }, []);
 
   if (loading) {
