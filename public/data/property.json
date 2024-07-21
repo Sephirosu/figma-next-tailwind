@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "photo": "/images/image1.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Nantes, France",
+    "owner": "Golwen",
+    "free": "2-8 Sept",
+    "price": "12.415",
+    "superhost": false,
+    "hobby": false,
+    "multi": true
+  },
+  {
+    "id": 2,
+    "photo": "/images/image2.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "London, UK",
+    "owner": "Amelia",
+    "free": "1-6 Aug",
+    "price": "6.075",
+    "superhost": false,
+    "hobby": "Hosting for 5 years",
+    "multi": true
+  },
+  {
+    "id": 3,
+    "photo": "/images/image3.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Lindfield, UK",
+    "owner": "Michelle and Michael",
+    "free": "6-13 Aug",
+    "price": "12.955",
+    "superhost": true,
+    "hobby": "Food artist",
+    "multi": false
+  },
+  {
+    "id": 4,
+    "photo": "/images/image4.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Palermo, Italy",
+    "owner": "Gandolfo Gabriele",
+    "free": "11-16 Aug",
+    "price": "87.42",
+    "superhost": false,
+    "hobby": "Artist",
+    "multi": false
+  },
+  {
+    "id": 5,
+    "photo": "/images/image5.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Sarajevo, Bosnia",
+    "owner": "Sempacho",
+    "free": "2-8 Sept",
+    "price": "3.35",
+    "superhost": true,
+    "hobby": "Sensei",
+    "multi": false
+  },
+  {
+    "id": 6,
+    "photo": "/images/image6.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Tokyo, Japan",
+    "owner": "Takashi Ishihara",
+    "free": "1-3 Sept",
+    "price": "13.13",
+    "superhost": false,
+    "hobby": "Fitness coach",
+    "multi": false
+  },
+  {
+    "id": 7,
+    "photo": "/images/image7.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Berane, Montenegro",
+    "owner": "Mali Gagi",
+    "free": "21-29 Sept",
+    "price": "6.32",
+    "superhost": false,
+    "hobby": "My owner",
+    "multi": false
+  },
+  {
+    "id": 8,
+    "photo": "/images/image8.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Manchester, UK",
+    "owner": "Wayne Rooney",
+    "free": "7-13 Sept",
+    "price": "9.69",
+    "superhost": true,
+    "hobby": false,
+    "multi": false
+  },
+  {
+    "id": 9,
+    "photo": "/images/image3.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Budapest, Hungary",
+    "owner": "Ferenc Puskas",
+    "free": "12-13 Sept",
+    "price": "13.45",
+    "superhost": false,
+    "hobby": false,
+    "multi": true
+  },
+  {
+    "id": 10,
+    "photo": "/images/image3.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Lisbon, Portugal",
+    "owner": "Cristiano Ronaldo",
+    "free": "25-27 Aug",
+    "price": "15.43",
+    "superhost": "Goat",
+    "multi": true
+  },
+  {
+    "id": 11,
+    "photo": "/images/image5.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Srednje, Bosnia",
+    "owner": "Olovni vojnik",
+    "free": "1-2 December",
+    "price": "12.415",
+    "superhost": false,
+    "hobby": false,
+    "multi": true
+  },
+  {
+    "id": 12,
+    "photo": "/images/image7.png",
+
+    "width": 291,
+    "height": 275,
+    "location": "Paris, France",
+    "owner": "Nakav nabildan frajer",
+    "free": "2-8 Sept",
+    "price": "12.415",
+    "superhost": false,
+    "hobby": false,
+    "multi": true
+  }
+]

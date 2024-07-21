@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "photo": "icons/icon1.svg",
+    "width": 67,
+    "height": 55
+  },
+  {
+    "id": 2,
+    "photo": "icons/icon2.svg",
+
+    "width": 75,
+    "height": 74
+  },
+  {
+    "id": 3,
+    "photo": "icons/icon3.svg",
+
+    "width": 67,
+    "height": 53
+  },
+  {
+    "id": 4,
+    "photo": "icons/icon4.svg",
+
+    "width": 77,
+    "height": 56
+  },
+  {
+    "id": 5,
+    "photo": "icons/icon5.svg",
+
+    "width": 67,
+    "height": 58
+  },
+  {
+    "id": 6,
+    "photo": "icons/icon6.svg",
+
+    "width": 67,
+    "height": 59
+  },
+  {
+    "id": 7,
+    "photo": "icons/icon7.svg",
+
+    "width": 67,
+    "height": 54
+  },
+  {
+    "id": 8,
+    "photo": "icons/icon8.svg",
+
+    "width": 86,
+    "height": 53
+  },
+  {
+    "id": 9,
+    "photo": "icons/icon9.svg",
+
+    "width": 67,
+    "height": 59
+  },
+  {
+    "id": 10,
+    "photo": "icons/icon10.svg",
+
+    "width": 67,
+    "height": 56
+  },
+  {
+    "id": 11,
+    "photo": "icons/icon11.svg",
+
+    "width": 67,
+    "height": 60
+  },
+  {
+    "id": 12,
+    "photo": "icons/icon12.svg",
+
+    "width": 67,
+    "height": 52
+  },
+  {
+    "id": 13,
+    "photo": "icons/icon13.svg",
+
+    "width": 67,
+    "height": 52
+  },
+  {
+    "id": 14,
+    "photo": "icons/icon12.svg",
+
+    "width": 67,
+    "height": 52
+  },
+  {
+    "id": 15,
+    "photo": "icons/icon13.svg",
+
+    "width": 67,
+    "height": 52
+  },
+
+  {
+    "id": 16,
+    "photo": "icons/icon1.svg",
+
+    "width": 67,
+    "height": 54
+  },
+  {
+    "id": 17,
+    "photo": "icons/icon2.svg",
+
+    "width": 75,
+    "height": 74
+  },
+  {
+    "id": 18,
+    "photo": "icons/icon3.svg",
+
+    "width": 67,
+    "height": 53
+  },
+  {
+    "id": 19,
+    "photo": "icons/icon4.svg",
+
+    "width": 77,
+    "height": 56
+  },
+  {
+    "id": 20,
+    "photo": "icons/icon5.svg",
+
+    "width": 67,
+    "height": 58
+  }
+]

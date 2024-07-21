@@ -1,19 +1,19 @@
-import { FaBeer } from "react-icons/fa";
-import Image from "next/image";
+import Navbar from "@/components/Navbar/Navbar"; // stavio sam da koristim ../ pri instalaciji
+import Category from "../components/Category/Category";
+import SearchAll from "../components/Search/SearchAll";
+import Property from "../components/Property/Property";
+import Footer from "../components/Footer/Footer";
 
-const App = () => {
+const Page = () => {
   return (
-    <div className="font-poppins ml-2 text-lg">
-      Gagi <FaBeer />
-      ble
-      <Image
-        src="/image1.png" // Path relative to the `public` directory
-        alt="Example Image"
-        width={300}
-        height={200}
-      />
+    <div>
+      <Navbar />
+      <SearchAll />
+      <Category />
+      <Property />
+      <Footer />
     </div>
   );
 };
 
-export default App;
+export default Page;
