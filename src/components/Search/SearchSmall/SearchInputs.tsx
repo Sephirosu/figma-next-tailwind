@@ -11,7 +11,7 @@ const SearchInputs: React.FC<{ openModal: () => void }> = ({ openModal }) => {
       </button>
       <div className=" ml-5 flex flex-col ">
         <div className="font-medium text-sm">Where to?</div>
-        <ul className="flex gap-5 text-gray-600 list-disc xxs:hidden  xs:hidden sm:flex">
+        <ul className="flex gap-5 text-gray-600 list-disc xxs:hidden  xs:hidden sm:flex oneplus:flex">
           <p>Anywhere</p>
           <li>Any week</li>
           <li>Add guest</li>

@@ -45,6 +45,7 @@ const config: Config = {
       screens: {
         xxs: "280px",
         xs: "320px",
+        oneplus: "412px",
       },
     },
   },
