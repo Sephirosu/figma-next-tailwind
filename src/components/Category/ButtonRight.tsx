@@ -7,7 +7,7 @@ type ButtonRightProps = {
 const ButtonRight: React.FC<ButtonRightProps> = ({ scrollRight }) => {
   return (
     <button
-      className="absolute right-0 z-10  top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md"
+      className="absolute right-0   top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2"
       onClick={scrollRight}
     >
       <MdKeyboardArrowRight size={20} />
