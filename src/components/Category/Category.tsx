@@ -1,7 +1,5 @@
 "use client";
-
-import { useState, useEffect, useRef } from "react";
-
+import { useState, useEffect, useRef, useCallback } from "react";
 import ButtonRight from "./ButtonRight";
 import ButtonLeft from "./ButtonLeft";
 import Icons from "./Icons";
@@ -15,6 +13,9 @@ type Icon = {
 
 const Category: React.FC = () => {
   const [icons, setIcons] = useState<Icon[]>([]);
+  const [showLeftArrow, setShowLeftArrow] = useState<boolean>(false);
+  const [showRightArrow, setShowRightArrow] = useState<boolean>(true);
+  const [hasScrolled, setHasScrolled] = useState<boolean>(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,31 +32,71 @@ const Category: React.FC = () => {
     fetchData();
   }, []);
 
+  const updateArrowVisibility = useCallback(() => {
+    if (containerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
+      setShowLeftArrow(scrollLeft > 0 || hasScrolled);
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth);
+    }
+  }, [hasScrolled]);
+
   const scrollLeft = () => {
     if (containerRef.current) {
       containerRef.current.scrollBy({
         left: -containerRef.current.clientWidth / 2,
         behavior: "smooth",
       });
+      setHasScrolled(true);
+      setTimeout(() => {
+        updateArrowVisibility();
+        if (containerRef.current!.scrollLeft <= 0) {
+          setShowLeftArrow(false);
+        }
+      }, 300);
     }
   };
 
   const scrollRight = () => {
     if (containerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
+      const newScrollLeft = scrollLeft + clientWidth / 2;
+
       containerRef.current.scrollBy({
-        left: containerRef.current.clientWidth / 2,
+        left: clientWidth / 2,
         behavior: "smooth",
       });
+
+      setTimeout(() => {
+        updateArrowVisibility();
+        if (newScrollLeft >= scrollWidth - clientWidth) {
+          setShowRightArrow(false);
+        } else {
+          setShowRightArrow(true);
+        }
+      }, 300);
     }
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      updateArrowVisibility();
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [updateArrowVisibility]);
+
+  useEffect(() => {
+    updateArrowVisibility();
+  }, [icons, hasScrolled, updateArrowVisibility]);
+
   return (
-    <div className="relative border-b border-[#DDDDDD] h-30 flex">
-      <ButtonLeft scrollLeft={scrollLeft} />
-
+    <div className="relative border-b border-[#DDDDDD] h-30 flex flex-col mx-8 lg:mx-[77px]">
+      {showLeftArrow && <ButtonLeft scrollLeft={scrollLeft} />}
       <Icons containerRef={containerRef} icons={icons} />
-
-      <ButtonRight scrollRight={scrollRight} />
+      {showRightArrow && <ButtonRight scrollRight={scrollRight} />}
     </div>
   );
 };

@@ -7,10 +7,10 @@ type ButtonLeftProps = {
 const ButtonLeft: React.FC<ButtonLeftProps> = ({ scrollLeft }) => {
   return (
     <button
-      className="absolute  left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2"
+      className="absolute z-2 left-0 hidden md:block top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full border-2 p-[2px]"
       onClick={scrollLeft}
     >
-      <MdKeyboardArrowLeft size={20} onClick={scrollLeft} />
+      <MdKeyboardArrowLeft size={20} />
     </button>
   );
 };

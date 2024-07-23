@@ -15,12 +15,18 @@ type IconsProps = {
 
 const Icons: React.FC<IconsProps> = ({ containerRef, icons }) => {
   return (
-    <div className="flex-1 mx-4 lg:ml-10 overflow-hidden" ref={containerRef}>
-      <div className="flex items-center">
+    <div
+      className=" overflow-hidden relative cursor-pointer lg:mx-10 md:mx-10"
+      ref={containerRef}
+    >
+      <div
+        style={{ WebkitOverflowScrolling: "touch" }}
+        className="flex items-center xs:gap-9 sm:gap-8 md:gap-7 lg:gap-6 "
+      >
         {icons.map((icon) => (
           <div
             key={icon.id}
-            className="flex-shrink-0 mx-4"
+            className="flex-shrink-0 "
             style={{ width: icon.width }}
           >
             <Image
@@ -28,7 +34,7 @@ const Icons: React.FC<IconsProps> = ({ containerRef, icons }) => {
               alt={`Icon ${icon.id}`}
               width={icon.width}
               height={icon.height}
-              className="hover:scale-110 transition-transform duration-200"
+              className="hover:scale-110  transition-transform duration-200"
             />
           </div>
         ))}

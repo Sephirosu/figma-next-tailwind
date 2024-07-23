@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
         width={102}
         height={32}
         alt="logo"
-        className="mt-21"
+        className="mt-21 cursor-pointer"
       />
     </div>
   );

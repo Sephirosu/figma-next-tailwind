@@ -16,7 +16,7 @@ const PictureSuperhost: React.FC<PictureSuperhostProps> = ({ picture }) => {
   return (
     <>
       {picture.superhost && (
-        <div className="absolute top-[15px] ml-[15px] flex w-full">
+        <div className="absolute top-[15px] ml-[15px] flex cursor-pointer hover:scale-105">
           <Image
             src="/icons/badge.svg"
             alt="Superhost Badge"

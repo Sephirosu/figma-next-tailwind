@@ -22,7 +22,7 @@ const PictureMulti: React.FC<PictureMultiProps> = ({ picture }) => {
             alt="Group Icon"
             width={47}
             height={6}
-            className="absolute bottom-[9px]"
+            className="absolute bottom-[9px] cursor-pointer hover:scale-105 "
           />
         </div>
       )}

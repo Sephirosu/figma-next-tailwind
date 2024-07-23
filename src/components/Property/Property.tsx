@@ -1,5 +1,6 @@
 "use client";
 import PropertyCard from "./PropertyCard";
+import ShowMap from "./ShowMap";
 import { useEffect, useState } from "react";
 
 interface Picture {
@@ -38,6 +39,7 @@ const Property: React.FC = () => {
       {pictures.map((picture) => (
         <PropertyCard key={picture.id} picture={picture} />
       ))}
+      <ShowMap />
     </div>
   );
 };

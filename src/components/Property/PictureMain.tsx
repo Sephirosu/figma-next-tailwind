@@ -19,7 +19,7 @@ const PictureFlat: React.FC<PictureMainProps> = ({ picture }) => {
         alt={`Picture ${picture.id}`}
         width={picture.width}
         height={picture.height}
-        className={`w-full`}
+        className={`w-full cursor-pointer`}
         priority
       />
     </div>

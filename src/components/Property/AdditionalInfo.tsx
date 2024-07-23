@@ -13,7 +13,7 @@ const AdditionalInfo: React.FC<AdditionalInfoProps> = ({ picture }) => {
     <div className="text-[13px] mt-[15px]">
       <div className="flex justify-between">
         <div>{picture.location}</div>
-        <ul className="flex items-center gap-1">
+        <ul className="flex items-center gap-1 cursor-pointer">
           <li>
             <FaStar width={15} height={15} className="mb-1" />
           </li>

@@ -19,7 +19,7 @@ const PictureHeart: React.FC<PictureHeartProps> = ({ picture }) => {
         src="/icons/heart.svg"
         width={23}
         height={23}
-        className="absolute top-[15px] right-[15px]"
+        className="absolute top-[15px] right-[15px] cursor-pointer hover:scale-105"
         alt="heart icon"
       />
     </div>
