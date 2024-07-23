@@ -23,6 +23,7 @@ const PictureSuperhost: React.FC<PictureSuperhostProps> = ({ picture }) => {
             width={84}
             height={24}
             className="relative"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
       )}

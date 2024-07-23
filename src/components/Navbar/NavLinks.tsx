@@ -22,6 +22,7 @@ const NavLinks: React.FC = () => {
           height={38}
           alt="login"
           className="ml-6 mt-21 cursor-pointer"
+          style={{ width: "auto", height: "auto" }}
         />
       </span>
     </div>

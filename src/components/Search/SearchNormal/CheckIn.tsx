@@ -10,4 +10,4 @@ const CheckIn = () => {
   );
 };
 
-export default CheckIn
+export default CheckIn;
