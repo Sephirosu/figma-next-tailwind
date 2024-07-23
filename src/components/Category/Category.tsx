@@ -92,6 +92,35 @@ const Category: React.FC = () => {
     updateArrowVisibility();
   }, [icons, hasScrolled, updateArrowVisibility]);
 
+  // Touch handling
+  useEffect(() => {
+    let startX: number;
+    let startScrollLeft: number;
+
+    const handleTouchStart = (e: TouchEvent) => {
+      startX = e.touches[0].pageX;
+      startScrollLeft = containerRef.current?.scrollLeft || 0;
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (containerRef.current) {
+        const touchX = e.touches[0].pageX;
+        const walk = (touchX - startX) * 1.5; // adjust scrolling speed
+        containerRef.current.scrollLeft = startScrollLeft - walk;
+        updateArrowVisibility();
+      }
+    };
+
+    const container = containerRef.current;
+    container?.addEventListener("touchstart", handleTouchStart);
+    container?.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      container?.removeEventListener("touchstart", handleTouchStart);
+      container?.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, [updateArrowVisibility]);
+
   return (
     <div className="relative border-b border-[#DDDDDD] h-30 flex flex-col mx-8 lg:mx-[77px]">
       {showLeftArrow && <ButtonLeft scrollLeft={scrollLeft} />}
