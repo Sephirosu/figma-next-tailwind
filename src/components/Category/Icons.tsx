@@ -21,7 +21,7 @@ const Icons: React.FC<IconsProps> = ({ containerRef, icons }) => {
     >
       <div
         style={{ WebkitOverflowScrolling: "touch" }}
-        className="flex items-center xs:gap-9 sm:gap-8 md:gap-7 lg:gap-6 "
+        className="flex items-center xxs:gap-3 xs:gap-3.5 sm:gap-5 md:gap-7 lg:gap-5 xl:gap-9 xxl:gap-12 "
       >
         {icons.map((icon) => (
           <div

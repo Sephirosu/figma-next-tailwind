@@ -73,7 +73,7 @@ const Category: React.FC = () => {
 
       setTimeout(() => {
         updateArrowVisibility();
-        setLeftClicks(0); // Reset left clicks when scrolling right
+        setLeftClicks(0);
         if (newScrollLeft >= scrollWidth - clientWidth) {
           setShowRightArrow(false);
         } else {
@@ -111,7 +111,7 @@ const Category: React.FC = () => {
       if (containerRef.current) {
         const touchX = e.touches[0].pageX;
         const distance = touchX - startX;
-        const walk = distance * (distance > 0 ? 1.5 : 1.2); // Initial faster scroll, slows down
+        const walk = distance * (distance > 0 ? 1.5 : 1.2);
         containerRef.current.scrollLeft = startScrollLeft - walk;
         updateArrowVisibility();
       }
