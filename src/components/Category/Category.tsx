@@ -16,6 +16,7 @@ const Category: React.FC = () => {
   const [showLeftArrow, setShowLeftArrow] = useState<boolean>(false);
   const [showRightArrow, setShowRightArrow] = useState<boolean>(true);
   const [hasScrolled, setHasScrolled] = useState<boolean>(false);
+  const [leftClicks, setLeftClicks] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,10 +48,14 @@ const Category: React.FC = () => {
         behavior: "smooth",
       });
       setHasScrolled(true);
+      setLeftClicks((prev) => prev + 1);
       setTimeout(() => {
         updateArrowVisibility();
         if (containerRef.current!.scrollLeft <= 0) {
-          setShowLeftArrow(false);
+          if (leftClicks > 0) {
+            setShowLeftArrow(false);
+            setLeftClicks(0);
+          }
         }
       }, 300);
     }
@@ -68,6 +73,7 @@ const Category: React.FC = () => {
 
       setTimeout(() => {
         updateArrowVisibility();
+        setLeftClicks(0); // Reset left clicks when scrolling right
         if (newScrollLeft >= scrollWidth - clientWidth) {
           setShowRightArrow(false);
         } else {
@@ -92,7 +98,6 @@ const Category: React.FC = () => {
     updateArrowVisibility();
   }, [icons, hasScrolled, updateArrowVisibility]);
 
-  // Touch handling
   useEffect(() => {
     let startX: number;
     let startScrollLeft: number;
@@ -105,7 +110,8 @@ const Category: React.FC = () => {
     const handleTouchMove = (e: TouchEvent) => {
       if (containerRef.current) {
         const touchX = e.touches[0].pageX;
-        const walk = (touchX - startX) * 1.5; // adjust scrolling speed
+        const distance = touchX - startX;
+        const walk = distance * (distance > 0 ? 1.5 : 1.2); // Initial faster scroll, slows down
         containerRef.current.scrollLeft = startScrollLeft - walk;
         updateArrowVisibility();
       }
