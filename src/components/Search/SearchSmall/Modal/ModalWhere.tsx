@@ -12,9 +12,9 @@ const countryOptions = Object.values(countries).map((country) => ({
 
 const ModalWhere = () => {
   const [value, setValue] = useState("");
-  const [suggestions, setSuggestions] = useState([]);
+  const [suggestions, setSuggestions] = useState<string[]>([]);
 
-  const getSuggestions = (value) => {
+  const getSuggestions = (value: string) => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
 
