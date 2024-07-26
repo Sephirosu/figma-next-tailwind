@@ -49,7 +49,7 @@ const ModalWho = () => {
               onClick={handleClose}
             />
             <div className=" text-xl font-semibold ml-[16px] ">
-              Who's coming?
+              Who`s coming?
             </div>
           </div>
           <div className="flex flex-col mx-5 space-y-10 ">
