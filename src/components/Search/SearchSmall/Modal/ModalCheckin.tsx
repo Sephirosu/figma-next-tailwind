@@ -6,13 +6,6 @@ import { FaTimes } from "react-icons/fa";
 const ModalCheckin = () => {
   const [startDate, setStartDate] = useState<Date | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const datePickerRef = useRef(null);
-
-  const handleFocus = () => {
-    if (datePickerRef.current) {
-      datePickerRef.current.setFocus();
-    }
-  };
 
   const openModal = () => {
     setIsModalOpen(true);
