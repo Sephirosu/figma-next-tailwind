@@ -35,7 +35,6 @@ const ModalWhere: React.FC = () => {
     onInputValueChange: ({ inputValue }) => setInputValue(inputValue || ""),
     onSelectedItemChange: ({ selectedItem }) =>
       setSelectedItem(selectedItem || null),
-    // Optionally, you can add more functionality here
   });
 
   return (
@@ -48,8 +47,8 @@ const ModalWhere: React.FC = () => {
             {...getInputProps({
               placeholder: "Search destinations",
               className: "ml-6 h-13 rounded outline-none w-full mt-4",
-              onFocus: () => openMenu(), // Open menu on focus
-              onBlur: () => closeMenu(), // Close menu on blur
+              onFocus: () => openMenu(),
+              onBlur: () => closeMenu(),
             })}
           />
           <ul
