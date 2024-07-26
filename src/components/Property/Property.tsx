@@ -19,6 +19,7 @@ interface Picture {
 
 const Property: React.FC = () => {
   const [pictures, setPictures] = useState<Picture[]>([]);
+  const [showMap, setShowMap] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -34,12 +35,26 @@ const Property: React.FC = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setShowMap(scrollPosition > 64);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="grid font-poppins grid-cols-1 mt-[32px] gap-[37px] mx-8 lg:mx-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:mx-10 2xl:grid-cols-4">
       {pictures.map((picture) => (
         <PropertyCard key={picture.id} picture={picture} />
       ))}
-      <ShowMap />
+
+      {showMap && <ShowMap />}
     </div>
   );
 };

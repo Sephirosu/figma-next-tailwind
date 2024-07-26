@@ -16,8 +16,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-.container {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}

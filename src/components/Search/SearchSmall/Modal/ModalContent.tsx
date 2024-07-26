@@ -1,12 +1,14 @@
 import ModalWhere from "./ModalWhere";
-import ModalWhen from "./ModalWhen";
+import ModalCheckin from "./ModalCheckin";
 import ModalWho from "./ModalWho";
+import ModalCheckout from "./ModalCheckout";
 
 const ModalContent = () => {
   return (
     <div className="container  m-2 ml-5 min-w-full ">
       <ModalWhere />
-      <ModalWhen />
+      <ModalCheckin />
+      <ModalCheckout />
       <ModalWho />
     </div>
   );
