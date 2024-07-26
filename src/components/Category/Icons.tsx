@@ -21,13 +21,13 @@ const Icons: React.FC<IconsProps> = ({ containerRef, icons }) => {
     >
       <div
         style={{ WebkitOverflowScrolling: "touch" }}
-        className="flex items-center xxs:gap-3 xs:gap-3.5 sm:gap-5 md:gap-7 lg:gap-5 xl:gap-9 xxl:gap-12"
+        className="flex items-center xxs:gap-3 xs:gap-3.5 sm:gap-5 md:gap-7 lg:gap-5 xl:gap-9 2xl:gap-10"
       >
         {icons.map((icon) => (
           <div
             key={icon.id}
             className="flex-shrink-0"
-            style={{ width: icon.width }} // Ensures the container width is set correctly
+            style={{ width: icon.width }}
           >
             <div
               className="relative"
