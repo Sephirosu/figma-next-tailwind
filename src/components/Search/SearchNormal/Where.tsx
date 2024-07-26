@@ -46,7 +46,7 @@ const Where: React.FC = () => {
     setValue(newValue);
   };
 
-  const inputProps = {
+  const inputProps: Autosuggest.InputProps<Suggestion> = {
     placeholder: "Search destinations",
     value,
     onChange,
