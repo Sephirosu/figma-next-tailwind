@@ -12,7 +12,7 @@ const Where = () => {
   const [value, setValue] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
-  const getSuggestions = (value) => {
+  const getSuggestions = (value: string) => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
 
