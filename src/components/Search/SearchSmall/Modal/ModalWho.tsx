@@ -3,21 +3,26 @@ import { SlMinus } from "react-icons/sl";
 import { BsPlusCircle } from "react-icons/bs";
 import { BiArrowBack } from "react-icons/bi";
 
-const ModalWho = () => {
-  const [adults, setAdults] = useState(0);
-  const [children, setChildren] = useState(0);
-  const [infants, setInfants] = useState(0);
-  const [pets, setPets] = useState(0);
-  const [showFullScreen, setShowFullScreen] = useState(false);
+// Define types for setter functions
+type SetterFunction = React.Dispatch<React.SetStateAction<number>>;
 
-  const totalGuests = adults + children + infants + pets;
-  const maxTotal = 13;
+// Define the ModalWho component
+const ModalWho: React.FC = () => {
+  const [adults, setAdults] = useState<number>(0);
+  const [children, setChildren] = useState<number>(0);
+  const [infants, setInfants] = useState<number>(0);
+  const [pets, setPets] = useState<number>(0);
+  const [showFullScreen, setShowFullScreen] = useState<boolean>(false);
 
-  const minusPeople = (setter) => {
+  const totalGuests: number = adults + children + infants + pets;
+  const maxTotal: number = 13;
+
+  // Define type for function parameter
+  const minusPeople = (setter: SetterFunction) => {
     setter((prev) => (prev > 0 ? prev - 1 : prev));
   };
 
-  const plusPeople = (setter) => {
+  const plusPeople = (setter: SetterFunction) => {
     setter((prev) => (totalGuests < maxTotal ? prev + 1 : prev));
   };
 

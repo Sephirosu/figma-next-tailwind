@@ -1,33 +1,41 @@
+import React, { useState, useEffect } from "react";
 import { BsPlusCircle } from "react-icons/bs";
 import { SlMinus } from "react-icons/sl";
 import { FaTimes } from "react-icons/fa";
-import { useState, useEffect } from "react";
 
-const WhoOpen = ({ closeWho, setTotal }) => {
-  const [adults, setAdults] = useState(0);
-  const [children, setChildren] = useState(0);
-  const [infants, setInfants] = useState(0);
-  const [pets, setPets] = useState(0);
+
+interface WhoOpenProps {
+  closeWho: () => void;
+  setTotal: (total: number) => void;
+}
+
+const WhoOpen: React.FC<WhoOpenProps> = ({ closeWho, setTotal }) => {
+  const [adults, setAdults] = useState<number>(0);
+  const [children, setChildren] = useState<number>(0);
+  const [infants, setInfants] = useState<number>(0);
+  const [pets, setPets] = useState<number>(0);
   const maxTotal = 15;
 
   useEffect(() => {
     setTotal(adults + children + infants + pets);
   }, [adults, children, infants, pets, setTotal]);
 
-  const plusPeople = (setCount) => {
+  const plusPeople = (setter: React.Dispatch<React.SetStateAction<number>>) => {
     if (adults + children + infants + pets < maxTotal) {
-      setCount((prev) => prev + 1);
+      setter((prev) => prev + 1);
     }
   };
 
-  const minusPeople = (setCount) => {
-    setCount((prev) => (prev > 0 ? prev - 1 : 0));
+  const minusPeople = (
+    setter: React.Dispatch<React.SetStateAction<number>>
+  ) => {
+    setter((prev) => (prev > 0 ? prev - 1 : 0));
   };
 
   const totalGuests = adults + children + infants + pets;
 
   return (
-    <div className="absolute -ml-32   z-10 mt-20  rounded-3xl font-poppins h-96 w-96 bg-white space-y-6 border-black p-6">
+    <div className="absolute -ml-32 z-10 mt-20 rounded-3xl font-poppins h-96 w-96 bg-white space-y-6 border-black p-6">
       <button onClick={closeWho}>
         <FaTimes />
       </button>
@@ -41,7 +49,7 @@ const WhoOpen = ({ closeWho, setTotal }) => {
             className="border rounded-full mx-2 text-gray-600"
             onClick={() => minusPeople(setAdults)}
           >
-            <SlMinus className="w-6 h-6 " />
+            <SlMinus className="w-6 h-6" />
           </button>
           <span className="font-lighter">{adults}</span>
           {totalGuests < maxTotal && (

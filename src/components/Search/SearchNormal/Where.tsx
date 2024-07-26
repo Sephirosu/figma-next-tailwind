@@ -3,16 +3,23 @@ import Autosuggest from "react-autosuggest";
 import { countries } from "countries-list";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
-const countryOptions = Object.values(countries).map((country) => ({
-  label: country.name,
-  value: country.name,
-}));
+interface Suggestion {
+  label: string;
+  value: string;
+}
 
-const Where = () => {
-  const [value, setValue] = useState("");
-  const [suggestions, setSuggestions] = useState([]);
+const countryOptions: Suggestion[] = Object.values(countries).map(
+  (country) => ({
+    label: country.name,
+    value: country.name,
+  })
+);
 
-  const getSuggestions = (value: string) => {
+const Where: React.FC = () => {
+  const [value, setValue] = useState<string>("");
+  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+
+  const getSuggestions = (value: string): Suggestion[] => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
 
@@ -24,7 +31,7 @@ const Where = () => {
         );
   };
 
-  const onSuggestionsFetchRequested = ({ value }) => {
+  const onSuggestionsFetchRequested = ({ value }: { value: string }) => {
     setSuggestions(getSuggestions(value));
   };
 
@@ -32,7 +39,10 @@ const Where = () => {
     setSuggestions([]);
   };
 
-  const onChange = (event, { newValue }) => {
+  const onChange = (
+    event: React.FormEvent<HTMLElement>,
+    { newValue }: { newValue: string }
+  ) => {
     setValue(newValue);
   };
 
@@ -51,7 +61,7 @@ const Where = () => {
         onSuggestionsClearRequested={onSuggestionsClearRequested}
         getSuggestionValue={(suggestion) => suggestion.value}
         renderSuggestion={(suggestion) => (
-          <div className="flex items-center  cursor-pointer">
+          <div className="flex items-center cursor-pointer">
             <span className="flex gap-3">
               <HiOutlineLocationMarker className="mt-1" />
               {suggestion.value}

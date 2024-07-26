@@ -1,20 +1,26 @@
+import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import Autosuggest from "react-autosuggest";
 import { countries } from "countries-list";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
-import { useState } from "react";
+interface Suggestion {
+  label: string;
+  value: string;
+}
 
-const countryOptions = Object.values(countries).map((country) => ({
-  label: country.name,
-  value: country.name,
-}));
+const countryOptions: Suggestion[] = Object.values(countries).map(
+  (country) => ({
+    label: country.name,
+    value: country.name,
+  })
+);
 
-const ModalWhere = () => {
-  const [value, setValue] = useState("");
-  const [suggestions, setSuggestions] = useState<string[]>([]);
+const ModalWhere: React.FC = () => {
+  const [value, setValue] = useState<string>("");
+  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
 
-  const getSuggestions = (value: string) => {
+  const getSuggestions = (value: string): Suggestion[] => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
 
@@ -26,7 +32,7 @@ const ModalWhere = () => {
         );
   };
 
-  const onSuggestionsFetchRequested = ({ value }) => {
+  const onSuggestionsFetchRequested = ({ value }: { value: string }) => {
     setSuggestions(getSuggestions(value));
   };
 
@@ -34,7 +40,10 @@ const ModalWhere = () => {
     setSuggestions([]);
   };
 
-  const onChange = (event, { newValue }) => {
+  const onChange = (
+    event: React.ChangeEvent<HTMLInputElement>,
+    { newValue }: { newValue: string }
+  ) => {
     setValue(newValue);
   };
 
@@ -56,7 +65,7 @@ const ModalWhere = () => {
           onSuggestionsClearRequested={onSuggestionsClearRequested}
           getSuggestionValue={(suggestion) => suggestion.value}
           renderSuggestion={(suggestion) => (
-            <div className="flex items-center  cursor-pointer">
+            <div className="flex items-center cursor-pointer">
               <span className="flex gap-3">
                 <HiOutlineLocationMarker className="mt-1" />
                 {suggestion.value}

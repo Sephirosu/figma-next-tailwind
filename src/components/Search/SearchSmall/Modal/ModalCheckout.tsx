@@ -8,12 +8,6 @@ const ModalCheckout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const datePickerRef = useRef(null);
 
-  const handleFocus = () => {
-    if (datePickerRef.current) {
-      datePickerRef.current.setFocus();
-    }
-  };
-
   const openModal = () => {
     setIsModalOpen(true);
     document.body.classList.add("overflow-hidden");
