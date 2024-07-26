@@ -70,8 +70,8 @@ const ModalWhere: React.FC = () => {
                       highlightedIndex === index ? "bg-gray-200" : ""
                     }`}
                   >
-                    <div className="flex items-center">
-                      <HiOutlineLocationMarker className="mt-1" />
+                    <div className="flex items-center gap-2">
+                      <HiOutlineLocationMarker />
                       {item.value}
                     </div>
                   </li>
