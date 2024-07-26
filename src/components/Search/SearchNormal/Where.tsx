@@ -35,7 +35,6 @@ const Where: React.FC = () => {
     onInputValueChange: ({ inputValue }) => setInputValue(inputValue || ""),
     onSelectedItemChange: ({ selectedItem }) =>
       setSelectedItem(selectedItem || null),
-    // Optionally, you can add more functionality here
   });
 
   return (
@@ -47,8 +46,8 @@ const Where: React.FC = () => {
             placeholder: "Search destinations",
             className:
               "text-left mt-1 text-sm mb-3.5 ml-4 w-[139px] mr-[46px] outline-none",
-            onFocus: () => openMenu(), // Open menu on focus
-            onBlur: () => closeMenu(), // Close menu on blur
+            onFocus: () => openMenu(),
+            onBlur: () => closeMenu(),
           })}
         />
         <ul
@@ -68,8 +67,8 @@ const Where: React.FC = () => {
                     highlightedIndex === index ? "bg-white" : ""
                   }`}
                 >
-                  <div className="flex items-center">
-                    <HiOutlineLocationMarker className="mt-1" />
+                  <div className="flex items-center gap-2">
+                    <HiOutlineLocationMarker />
                     {item.value}
                   </div>
                 </li>
