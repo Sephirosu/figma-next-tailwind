@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import Calendar from "./Calendar";
+import Calendar from "../Calendar/Calendar";
 import "react-datepicker/dist/react-datepicker.css";
 import { FaTimes } from "react-icons/fa";
 

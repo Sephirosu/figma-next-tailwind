@@ -13,7 +13,7 @@ const ModalOpen: React.FC<{
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-gray-100 h-full w-full  shadow-lg"
+        className="bg-gray-100 h-full w-full  shadow-lg overflow-hidden"
       >
         <CloseModalButton closeModal={closeModal} />
         <ModalContent />

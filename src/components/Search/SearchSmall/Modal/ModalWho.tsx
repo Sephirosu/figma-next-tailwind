@@ -3,10 +3,10 @@ import { SlMinus } from "react-icons/sl";
 import { BsPlusCircle } from "react-icons/bs";
 import { BiArrowBack } from "react-icons/bi";
 
-// Define types for setter functions
+
 type SetterFunction = React.Dispatch<React.SetStateAction<number>>;
 
-// Define the ModalWho component
+
 const ModalWho: React.FC = () => {
   const [adults, setAdults] = useState<number>(0);
   const [children, setChildren] = useState<number>(0);
@@ -17,7 +17,6 @@ const ModalWho: React.FC = () => {
   const totalGuests: number = adults + children + infants + pets;
   const maxTotal: number = 13;
 
-  // Define type for function parameter
   const minusPeople = (setter: SetterFunction) => {
     setter((prev) => (prev > 0 ? prev - 1 : prev));
   };
