@@ -21,7 +21,7 @@ const ModalCheckout = () => {
   return (
     <div>
       <div
-        className="border w-[90%] items-center flex cursor-pointer justify-between mt-10 h-14 bg-white"
+        className="border mr-9 items-center flex cursor-pointer justify-between mt-10 h-14 bg-white"
         onClick={openModal}
       >
         <div className="text-gray-500 ml-4">Check-in</div>

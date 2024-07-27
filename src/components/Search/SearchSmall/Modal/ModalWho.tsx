@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import { SlMinus } from "react-icons/sl";
 import { BsPlusCircle } from "react-icons/bs";
 import { BiArrowBack } from "react-icons/bi";
 
-
 type SetterFunction = React.Dispatch<React.SetStateAction<number>>;
-
 
 const ModalWho: React.FC = () => {
   const [adults, setAdults] = useState<number>(0);
@@ -16,6 +15,18 @@ const ModalWho: React.FC = () => {
 
   const totalGuests: number = adults + children + infants + pets;
   const maxTotal: number = 13;
+
+  useEffect(() => {
+    if (showFullScreen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [showFullScreen]);
 
   const minusPeople = (setter: SetterFunction) => {
     setter((prev) => (prev > 0 ? prev - 1 : prev));
@@ -36,7 +47,7 @@ const ModalWho: React.FC = () => {
   return (
     <>
       <div
-        className="border w-[90%] items-center cursor-pointer justify-between flex mt-10 h-14 bg-white"
+        className="border mr-9 items-center cursor-pointer justify-between flex mt-10 h-14 bg-white"
         onClick={handleClick}
       >
         <div className="text-gray-500 ml-4">Who</div>

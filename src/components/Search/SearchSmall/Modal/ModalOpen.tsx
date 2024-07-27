@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import CloseModalButton from "./CloseModalButton";
 import ModalContent from "./ModalContent";
 import ModalFooter from "./ModalFooter";
@@ -6,6 +7,14 @@ const ModalOpen: React.FC<{
   closeModal: () => void;
   stopPropagation: (e: React.MouseEvent<HTMLDivElement>) => void;
 }> = ({ closeModal, stopPropagation }) => {
+  useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, []);
+
   return (
     <div
       onClick={stopPropagation}
@@ -13,7 +22,7 @@ const ModalOpen: React.FC<{
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-gray-100 h-full w-full  shadow-lg overflow-hidden"
+        className="bg-gray-100 h-full w-full md:w-auto md:h-auto shadow-lg overflow-hidden"
       >
         <CloseModalButton closeModal={closeModal} />
         <ModalContent />
