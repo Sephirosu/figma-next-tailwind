@@ -40,20 +40,21 @@ const ModalWhere: React.FC = () => {
   return (
     <>
       <div className="text-xl font-semibold mb-3">Where to?</div>
-      <div className="border flex h-14  bg-white  mr-10">
+      <div className="border flex h-14 bg-white mr-10 w-full max-w-full relative">
         <BiSearch className="w-5 h-9 mt-2.5 ml-4 cursor-pointer" />
         <div className="relative flex-1">
           <input
             {...getInputProps({
               placeholder: "Search destinations",
-              className: "ml-6 h-13 rounded outline-none  mt-4",
+              className:
+                "ml-6 h-13 rounded outline-none mt-4 w-full pr-10 truncate",
               onFocus: () => openMenu(),
               onBlur: () => closeMenu(),
             })}
           />
           <ul
             {...getMenuProps()}
-            className={`absolute z-10 mt-1 bg-white border-black rounded-3xl ${
+            className={`absolute z-10 mt-1 bg-white border-black rounded-3xl w-full ${
               isOpen ? "block" : "hidden"
             }`}
           >
