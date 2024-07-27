@@ -47,7 +47,7 @@ const ModalWho: React.FC = () => {
   return (
     <>
       <div
-        className="border mr-9 items-center cursor-pointer justify-between flex mt-10 h-14 bg-white"
+        className="border mr-10 items-center cursor-pointer justify-between flex mt-10 h-14 bg-white"
         onClick={handleClick}
       >
         <div className="text-gray-500 ml-4">Who</div>

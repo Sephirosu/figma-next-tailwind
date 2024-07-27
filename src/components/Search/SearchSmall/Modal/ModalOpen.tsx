@@ -18,11 +18,11 @@ const ModalOpen: React.FC<{
   return (
     <div
       onClick={stopPropagation}
-      className="fixed inset-0 overflow-hidden bg-black bg-opacity-50 flex justify-center items-center font-poppins"
+      className="fixed inset-0 overflow-hidden  bg-black bg-opacity-50 flex justify-center items-center font-poppins"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-gray-100 h-full w-full md:w-auto md:h-auto shadow-lg overflow-hidden"
+        className="bg-gray-100 h-full w-full  shadow-lg overflow-hidden"
       >
         <CloseModalButton closeModal={closeModal} />
         <ModalContent />

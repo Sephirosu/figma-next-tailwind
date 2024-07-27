@@ -40,7 +40,7 @@ const ModalWhere: React.FC = () => {
   return (
     <>
       <div className="text-xl font-semibold mb-3">Where to?</div>
-      <div className="border flex h-14  bg-white rounded mr-9">
+      <div className="border flex h-14  bg-white  mr-10">
         <BiSearch className="w-5 h-9 mt-2.5 ml-4 cursor-pointer" />
         <div className="relative flex-1">
           <input
