@@ -40,46 +40,46 @@ const ModalWhere: React.FC = () => {
   return (
     <>
       <div className="text-xl font-semibold mb-3">Where to?</div>
-      <div className="border flex h-14 bg-white mr-10 w-full max-w-full relative">
+      <div className="border flex h-14 bg-white mr-10">
         <BiSearch className="w-5 h-9 mt-2.5 ml-4 cursor-pointer" />
-        <div className="relative flex-1">
+        <div className="relative flex-1 flex items-center">
           <input
             {...getInputProps({
               placeholder: "Search destinations",
-              className:
-                "ml-6 h-13 rounded outline-none mt-4 w-full pr-10 truncate",
+              className: "ml-6 h-full rounded outline-none w-full",
               onFocus: () => openMenu(),
               onBlur: () => closeMenu(),
             })}
+            style={{ minWidth: 0 }}
           />
-          <ul
-            {...getMenuProps()}
-            className={`absolute z-10 mt-1 bg-white border-black rounded-3xl w-full ${
-              isOpen ? "block" : "hidden"
-            }`}
-          >
-            {isOpen &&
-              countryOptions
-                .filter((item) =>
-                  item.label.toLowerCase().includes(inputValue.toLowerCase())
-                )
-                .map((item, index) => (
-                  <li
-                    {...getItemProps({ item })}
-                    key={item.value}
-                    className={`cursor-pointer p-2 ${
-                      highlightedIndex === index ? "bg-gray-200" : ""
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <HiOutlineLocationMarker />
-                      {item.value}
-                    </div>
-                  </li>
-                ))}
-          </ul>
         </div>
       </div>
+      <ul
+        {...getMenuProps()}
+        className={`absolute z-10 mt-1 bg-white border-black rounded-3xl ${
+          isOpen ? "block" : "hidden"
+        }`}
+      >
+        {isOpen &&
+          countryOptions
+            .filter((item) =>
+              item.label.toLowerCase().includes(inputValue.toLowerCase())
+            )
+            .map((item, index) => (
+              <li
+                {...getItemProps({ item })}
+                key={item.value}
+                className={`cursor-pointer p-2 ${
+                  highlightedIndex === index ? "bg-gray-200" : ""
+                }`}
+              >
+                <div className="flex items-center gap-2">
+                  <HiOutlineLocationMarker />
+                  {item.value}
+                </div>
+              </li>
+            ))}
+      </ul>
     </>
   );
 };
