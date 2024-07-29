@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef, useCallback } from "react";
-import ButtonRight from "./ButtonRight";
-import ButtonLeft from "./ButtonLeft";
+import ButtonRight from "./ArrowRight";
+import ButtonLeft from "./ArrowLeft";
 import Icons from "./Icons";
 
 type Icon = {
@@ -128,10 +128,12 @@ const Category: React.FC = () => {
   }, [updateArrowVisibility]);
 
   return (
-    <div className="relative border-b border-[#DDDDDD] h-30 flex flex-col mx-8 lg:mx-[77px]">
-      {showLeftArrow && <ButtonLeft scrollLeft={scrollLeft} />}
-      <Icons containerRef={containerRef} icons={icons} />
-      {showRightArrow && <ButtonRight scrollRight={scrollRight} />}
+    <div className="border-b  border-[#DDDDDD]">
+      <div className="relative  h-30 flex flex-col mx-8 lg:mx-[77px]">
+        {showLeftArrow && <ButtonLeft scrollLeft={scrollLeft} />}
+        <Icons containerRef={containerRef} icons={icons} />
+        {showRightArrow && <ButtonRight scrollRight={scrollRight} />}
+      </div>
     </div>
   );
 };

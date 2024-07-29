@@ -16,7 +16,7 @@ type IconsProps = {
 const Icons: React.FC<IconsProps> = ({ containerRef, icons }) => {
   return (
     <div
-      className="overflow-hidden relative cursor-pointer lg:mx-10 md:mx-10"
+      className="overflow-hidden  relative cursor-pointer lg:mx-10 md:mx-10"
       ref={containerRef}
     >
       <div
