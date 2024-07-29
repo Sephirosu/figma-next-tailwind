@@ -16,18 +16,6 @@ const ModalWho: React.FC = () => {
   const totalGuests: number = adults + children + infants + pets;
   const maxTotal: number = 13;
 
-  useEffect(() => {
-    if (showFullScreen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [showFullScreen]);
-
   const minusPeople = (setter: SetterFunction) => {
     setter((prev) => (prev > 0 ? prev - 1 : prev));
   };
