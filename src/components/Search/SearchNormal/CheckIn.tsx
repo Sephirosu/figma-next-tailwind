@@ -1,10 +1,11 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
-
 import "react-datepicker/dist/react-datepicker.css";
 
-const CheckOut = () => {
+const CheckIn = () => {
   const [startDate, setStartDate] = useState<Date | null>(null);
+
+  const minDate = new Date();
 
   return (
     <div className="flex flex-col ml-4 border-r-[1px]">
@@ -16,9 +17,10 @@ const CheckOut = () => {
         className="text-left mt-1 text-sm mb-3.5 w-[73px] mr-8 ml-2 outline-none"
         dateFormat="dd-MM-yy"
         onKeyDown={(e) => e.preventDefault()}
+        minDate={minDate}
       />
     </div>
   );
 };
 
-export default CheckOut;
+export default CheckIn;

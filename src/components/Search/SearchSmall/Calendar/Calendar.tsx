@@ -12,8 +12,9 @@ const Calendar: React.FC<CalendarProps> = ({ setStartDate, closeModal }) => {
     new Date().toDateString().split(" ")[1]
   );
   const [activeYear, setActiveYear] = useState(new Date().getFullYear());
-  const prevMonth = useRef<number>(new Date().getMonth()); 
+  const prevMonth = useRef<number>(new Date().getMonth());
   const [firstDayInMonth, setFirstDayInMonth] = useState<number[]>([]);
+  const minDate = new Date();
 
   useEffect(() => {
     let x = [];
@@ -28,7 +29,7 @@ const Calendar: React.FC<CalendarProps> = ({ setStartDate, closeModal }) => {
       new Date(new Date().setMonth(activeMonth)).toDateString().split(" ")[1]
     );
 
-    prevMonth.current = activeMonth; 
+    prevMonth.current = activeMonth;
   }, [activeMonth]);
 
   return (
@@ -116,6 +117,7 @@ const Calendar: React.FC<CalendarProps> = ({ setStartDate, closeModal }) => {
                       currentYear={activeYear}
                       setStartDate={setStartDate}
                       closeModal={closeModal}
+                      minDate={minDate}
                     />
                   </tr>
                 ))}

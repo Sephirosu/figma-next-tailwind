@@ -1,23 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 import Search from "./SearchNormal/Search";
 import Searchsmall from "./SearchSmall/Searchsmall";
 
 const SearchAll: React.FC = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <div className="border-b">
