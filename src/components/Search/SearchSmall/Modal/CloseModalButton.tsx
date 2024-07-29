@@ -1,15 +1,16 @@
 import { FaTimes } from "react-icons/fa";
+import Button from "@/app/Button";
 
 const CloseModalButton: React.FC<{ closeModal: () => void }> = ({
   closeModal,
 }) => {
   return (
-    <button
+    <Button
       onClick={closeModal}
-      className="border-2  rounded-full p-2 m-4 bg-white"
+      className="border-2 rounded-full p-2 m-4 bg-white text-gray-600"
     >
       <FaTimes />
-    </button>
+    </Button>
   );
 };
 
