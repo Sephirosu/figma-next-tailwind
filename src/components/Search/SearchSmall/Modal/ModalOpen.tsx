@@ -8,22 +8,21 @@ const ModalOpen: React.FC<{
   stopPropagation: (e: React.MouseEvent<HTMLDivElement>) => void;
 }> = ({ closeModal, stopPropagation }) => {
   useEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;
     document.body.style.overflow = "hidden";
 
     return () => {
-      document.body.style.overflow = originalStyle;
+      document.body.style.overflow = "";
     };
   }, []);
 
   return (
     <div
       onClick={stopPropagation}
-      className="fixed inset-0 overflow-hidden bg-black bg-opacity-50 flex justify-center items-center font-poppins"
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-poppins overflow-hidden"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-gray-100 h-full w-full shadow-lg overflow-auto"
+        className="bg-gray-100 h-full w-full shadow-lg overflow-hidden"
       >
         <CloseModalButton closeModal={closeModal} />
         <ModalContent />

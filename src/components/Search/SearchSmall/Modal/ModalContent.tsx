@@ -5,7 +5,7 @@ import ModalCheckout from "./ModalCheckout";
 
 const ModalContent = () => {
   return (
-    <div className="container overflow-hidden z-50  m-2 ml-5 max-w-full ">
+    <div className="container overflow-hidden z-50 m-2 ml-5 max-w-full h-full">
       <ModalWhere />
       <ModalCheckin />
       <ModalCheckout />
