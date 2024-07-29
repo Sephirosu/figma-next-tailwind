@@ -26,7 +26,7 @@ const CalendarRow: React.FC<CalendarRowProps> = ({
 
   const handleDateClick = (day: number) => {
     const selectedDate = new Date(currentYear, currentMonth, day);
-    if (isBefore(selectedDate, minDate)) return; // Ignoriši klik na prošle datume
+    if (isBefore(selectedDate, minDate)) return;
     setStartDate(selectedDate);
     closeModal();
   };
