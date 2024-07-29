@@ -7,15 +7,3 @@
 body {
   @apply font-poppins;
 }
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.modal.hidden {
-  display: none;
-}
-
-.modal.visible {
-  display: block;
-}

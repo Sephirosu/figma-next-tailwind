@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
         height={32}
         alt="logo"
         className="mt-21 cursor-pointer"
-        priority={true} // valja se error nece vise pojavljivati :D
+        priority={true}
       />
     </div>
   );
