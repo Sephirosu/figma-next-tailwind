@@ -33,9 +33,9 @@ const Calendar: React.FC<CalendarProps> = ({ setStartDate, closeModal }) => {
   }, [activeMonth]);
 
   return (
-    <div className="h-screen w-screen overflow-hidden flex items-center justify-center p-4 bg-gray-100 z-50 cursor-pointer">
+    <div className="h-screen w-screen  overflow-hidden flex  justify-center   p-4 bg-gray-100 z-50 ">
       <div className="w-full max-w-md md:shadow-lg md:rounded bg-gray-100">
-        <div className="w-full rounded">
+        <div className="w-full rounded ">
           <div className="flex items-center justify-between mb-4 p-4">
             <div className="text-left font-bold text-xl text-black">
               {`${activeMonthString} ${activeYear}`}

@@ -38,7 +38,7 @@ const DateModal = ({ title, date, setDate }: DateModalProps) => {
             >
               <FaTimes />
             </button>
-            <div className="h-full w-full overflow-auto">
+            <div className="h-full w-full overflow-auto ">
               <Calendar setStartDate={setDate} closeModal={closeModal} />
             </div>
           </div>

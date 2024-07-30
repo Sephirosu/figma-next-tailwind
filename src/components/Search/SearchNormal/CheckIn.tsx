@@ -9,7 +9,7 @@ const CheckIn = () => {
 
   return (
     <div className="flex flex-col ml-4 border-r-[1px]">
-      <div className="font-black text-left text-xs mt-3.5 ml-2">Check-out</div>
+      <div className="font-black text-left text-xs mt-3.5 ml-2">Check-in</div>
       <DatePicker
         selected={startDate}
         onChange={(date: Date | null) => setStartDate(date)}

@@ -26,7 +26,7 @@ const Icons: React.FC<IconsProps> = ({ containerRef, icons }) => {
         {icons.map((icon) => (
           <div
             key={icon.id}
-            className="flex-shrink-0"
+            className="flex-shrink-0 "
             style={{ width: icon.width }}
           >
             <div
