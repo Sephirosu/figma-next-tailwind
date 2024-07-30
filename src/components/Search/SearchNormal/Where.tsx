@@ -45,7 +45,7 @@ const Where: React.FC = () => {
           {...getInputProps({
             placeholder: "Search destinations",
             className:
-              "text-left mt-1 text-sm mb-3.5 ml-4 w-[168px] mr-[46px] outline-none",
+              "text-left mt-1 text-sm mb-3.5 ml-4 w-[141px] mr-[46px] outline-none",
             onFocus: () => openMenu(),
             onBlur: () => closeMenu(),
           })}
