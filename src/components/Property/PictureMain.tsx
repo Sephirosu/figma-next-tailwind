@@ -1,24 +1,25 @@
 import Image from "next/image";
 
-interface Picture {
+interface PictureMainProps {
   id: number;
   photo: string;
   width: number;
   height: number;
 }
 
-interface PictureMainProps {
-  picture: Picture;
-}
-
-const PictureFlat: React.FC<PictureMainProps> = ({ picture }) => {
+const PictureFlat: React.FC<PictureMainProps> = ({
+  photo,
+  width,
+  id,
+  height,
+}) => {
   return (
     <div>
       <Image
-        src={picture.photo}
-        alt={`Picture ${picture.id}`}
-        width={picture.width}
-        height={picture.height}
+        src={photo}
+        alt={`Picture ${id}`}
+        width={width}
+        height={height}
         className={`w-full cursor-pointer`}
         priority
       />

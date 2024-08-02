@@ -1,23 +1,20 @@
-import { FaStar } from "react-icons/fa";
-
-interface Picture {
-  location: string;
-}
+import Ratings from "./Ratings";
 
 interface AdditionalInfoProps {
-  picture: Picture;
+  location: string;
+  rating: number;
 }
 
-const AdditionalInfo: React.FC<AdditionalInfoProps> = ({ picture }) => {
+const AdditionalInfo: React.FC<AdditionalInfoProps> = ({
+  location,
+  rating,
+}) => {
   return (
     <div className="text-[13px] mt-[15px]">
       <div className="flex justify-between">
-        <div>{picture.location}</div>
+        <div>{location}</div>
         <ul className="flex items-center gap-1 cursor-pointer">
-          <li>
-            <FaStar width={15} height={15} className="mb-1" />
-          </li>
-          <li>4.91</li>
+          <Ratings rating={rating} />
         </ul>
       </div>
     </div>

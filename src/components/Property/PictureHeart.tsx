@@ -1,27 +1,10 @@
-import Image from "next/image";
-import React from "react";
+import Heart from "@icons/heart.svg";
 
-interface Picture {
-  id: number;
-  photo: string;
-  width: number;
-  height: number;
-}
 
-interface PictureHeartProps {
-  picture: Picture;
-}
-
-const PictureHeart: React.FC<PictureHeartProps> = ({ picture }) => {
+const PictureHeart: React.FC = () => {
   return (
     <div>
-      <Image
-        src="/icons/heart.svg"
-        width={23}
-        height={23}
-        className="absolute top-[15px] right-[15px] cursor-pointer hover:scale-105"
-        alt="heart icon"
-      />
+      <Heart className="absolute top-[15px] right-[15px] cursor-pointer hover:scale-105" />
     </div>
   );
 };

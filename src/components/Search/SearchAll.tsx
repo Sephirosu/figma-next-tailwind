@@ -1,23 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Search from "./SearchNormal/Search";
 import Searchsmall from "./SearchSmall/Searchsmall";
+import useScreenSize from "../hooks/useScreenSize";
 
 const SearchAll: React.FC = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isSmallScreen = useScreenSize();
 
   return (
     <div className="border-b">

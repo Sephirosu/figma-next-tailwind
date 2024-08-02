@@ -1,16 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Logo: React.FC = () => {
   return (
     <div>
-      <Image
-        src="/logo/Logotech.png"
-        width={102}
-        height={32}
-        alt="logo"
-        className="mt-21 cursor-pointer"
-        priority={true}
-      />
+      <Link href="/">
+        <Image
+          src="/logo/Logotech.png"
+          width={102}
+          height={32}
+          alt="logo"
+          className="mt-21 cursor-pointer"
+          priority={true}
+        />
+      </Link>
     </div>
   );
 };

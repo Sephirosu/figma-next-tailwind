@@ -36,13 +36,15 @@ const ModalCounter: React.FC = () => {
       </div>
 
       {showFullScreen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-white pt-20">
-          <div className="flex items-center mb-4 ml-5">
+        <div className="fixed inset-0 z-50 flex flex-col bg-white ">
+          <div className="flex items-center  mt-6 ml-5">
             <BiArrowBack
               className="w-6 h-6 cursor-pointer"
               onClick={handleClose}
             />
-            <div className="text-xl font-semibold ml-[16px]">Who’s coming?</div>
+          </div>
+          <div className=" font-semibold mt-5 flex justify-center items-center text-2xl">
+            Who’s coming?
           </div>
           <div className="flex flex-col mx-5 space-y-10">
             <ModalCounterAdults

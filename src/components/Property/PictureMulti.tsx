@@ -1,27 +1,15 @@
-import Image from "next/image";
+import Group from "@icons/group.svg";
 
-interface Picture {
-  id: number;
-  photo: string;
-  width: number;
-  height: number;
+interface PictureMultiProps {
   multi?: boolean;
 }
 
-interface PictureMultiProps {
-  picture: Picture;
-}
-
-const PictureMulti: React.FC<PictureMultiProps> = ({ picture }) => {
+const PictureMulti: React.FC<PictureMultiProps> = ({ multi }) => {
   return (
     <>
-      {picture.multi && (
+      {multi && (
         <div className="relative flex items-center justify-center">
-          <Image
-            src="/icons/group.svg"
-            alt="Group Icon"
-            width={47}
-            height={6}
+          <Group
             className="absolute bottom-[9px] cursor-pointer hover:scale-105 "
             style={{ width: "auto", height: "auto" }}
           />

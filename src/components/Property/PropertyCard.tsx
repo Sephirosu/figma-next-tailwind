@@ -18,6 +18,7 @@ interface Picture {
   hobby: string;
   free: string;
   price: number;
+  rating: number;
 }
 
 interface PropertyCardProps {
@@ -25,15 +26,29 @@ interface PropertyCardProps {
 }
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ picture }) => {
+  const {
+    id,
+    photo,
+    width,
+    height,
+    superhost,
+    multi,
+    location,
+    owner,
+    hobby,
+    free,
+    price,
+    rating,
+  } = picture;
   return (
-    <div key={picture.id} className="relative">
-      <PictureFlat picture={picture} />
-      <PictureHeart picture={picture} />
-      <PictureMulti picture={picture} />
-      <PictureSuperhost picture={picture} />
-      <AdditionalInfo picture={picture} />
-      <OwnerInfo picture={picture} />
-      <AvailablePrice picture={picture} />
+    <div key={id} className="relative">
+      <PictureFlat id={id} photo={photo} width={width} height={height} />
+      <PictureHeart />
+      <PictureMulti multi={multi} />
+      <PictureSuperhost superhost={superhost} />
+      <AdditionalInfo location={location} rating={rating} />
+      <OwnerInfo owner={owner} hobby={hobby} />
+      <AvailablePrice free={free} price={price} />
     </div>
   );
 };

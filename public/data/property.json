@@ -2,7 +2,7 @@
   {
     "id": 1,
     "photo": "/images/image1.png",
-
+    "rating": 4.92,
     "width": 291,
     "height": 275,
     "location": "Nantes, France",
@@ -16,7 +16,7 @@
   {
     "id": 2,
     "photo": "/images/image2.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "London, UK",
@@ -30,7 +30,7 @@
   {
     "id": 3,
     "photo": "/images/image3.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Lindfield, UK",
@@ -44,7 +44,7 @@
   {
     "id": 4,
     "photo": "/images/image4.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Palermo, Italy",
@@ -58,7 +58,7 @@
   {
     "id": 5,
     "photo": "/images/image5.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Sarajevo, Bosnia",
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "photo": "/images/image6.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Tokyo, Japan",
@@ -86,7 +86,7 @@
   {
     "id": 7,
     "photo": "/images/image7.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Berane, Montenegro",
@@ -100,7 +100,7 @@
   {
     "id": 8,
     "photo": "/images/image8.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Manchester, UK",
@@ -114,7 +114,7 @@
   {
     "id": 9,
     "photo": "/images/image3.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Budapest, Hungary",
@@ -128,7 +128,7 @@
   {
     "id": 10,
     "photo": "/images/image3.png",
-
+    "rating": 4.49,
     "width": 291,
     "height": 275,
     "location": "Lisbon, Portugal",
@@ -141,7 +141,7 @@
   {
     "id": 11,
     "photo": "/images/image5.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Srednje, Bosnia",
@@ -155,7 +155,7 @@
   {
     "id": 12,
     "photo": "/images/image7.png",
-
+    "rating": 4.91,
     "width": 291,
     "height": 275,
     "location": "Paris, France",

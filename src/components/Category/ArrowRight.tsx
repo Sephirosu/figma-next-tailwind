@@ -1,4 +1,4 @@
-import Button from "../../app/Button";
+import Button from "@/app/Button";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 type ArrowRightProps = {

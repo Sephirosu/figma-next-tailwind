@@ -1,5 +1,5 @@
 import { BiSearch } from "react-icons/bi";
-import Button from "../../../../app/Button";
+import Button from "@app/Button"
 
 const SearchModalButton: React.FC = () => {
   return (

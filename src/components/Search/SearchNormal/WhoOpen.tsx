@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import Button from "@/app/Button";
 import CounterAdults from "./CounterAdults";
@@ -39,7 +39,7 @@ const WhoOpen: React.FC<WhoOpenProps> = ({ closeWho, setTotal }) => {
   const totalGuests = adults + child + infants + pets;
 
   return (
-    <div className="absolute -ml-32 z-10 mt-20 rounded-3xl font-poppins h-96 w-96 bg-white space-y-6 border-black p-6">
+    <div className="absolute modal-content -ml-32 z-10 mt-20 rounded-3xl font-poppins h-96 w-96 bg-white space-y-6 border-black p-6">
       <div className="flex justify-end mr-2.5">
         <Button onClick={closeWho} className="self-end ">
           <FaTimes />

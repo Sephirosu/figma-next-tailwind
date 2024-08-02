@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useCombobox } from "downshift";
 import { countries } from "countries-list";
 import { HiOutlineLocationMarker } from "react-icons/hi";

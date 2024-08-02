@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Frame from "@icons/frame2.svg";
+import Frame2 from "@icons/frame1213.svg";
 
 const NavLinks: React.FC = () => {
   return (
@@ -7,20 +8,10 @@ const NavLinks: React.FC = () => {
         Become a host
       </span>
       <span>
-        <Image
-          src="icons/frame1213.svg"
-          width={18}
-          height={18}
-          alt="frame"
-          className="ml-5 mt-8 md:block hidden cursor-pointer"
-        />
+        <Frame2 className="ml-5 mt-8 md:block hidden cursor-pointer" />
       </span>
       <span>
-        <Image
-          src="icons/frame2.svg"
-          width={81}
-          height={38}
-          alt="login"
+        <Frame
           className="ml-6 mt-21 cursor-pointer"
           style={{ width: "auto", height: "auto" }}
         />

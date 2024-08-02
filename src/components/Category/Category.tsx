@@ -26,7 +26,7 @@ const Category: React.FC = () => {
         const result: Icon[] = await response.json();
         setIcons(result);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.log("error");
       }
     };
 

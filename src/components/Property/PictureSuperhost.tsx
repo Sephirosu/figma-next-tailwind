@@ -1,27 +1,15 @@
-import Image from "next/image";
+import Badge from "@icons/badge.svg";
 
-interface Picture {
-  id: number;
-  photo: string;
-  width: number;
-  height: number;
+interface PictureSuperhostProps {
   superhost: boolean;
 }
 
-interface PictureSuperhostProps {
-  picture: Picture;
-}
-
-const PictureSuperhost: React.FC<PictureSuperhostProps> = ({ picture }) => {
+const PictureSuperhost: React.FC<PictureSuperhostProps> = ({ superhost }) => {
   return (
     <>
-      {picture.superhost && (
+      {superhost && (
         <div className="absolute top-[15px] ml-[15px] flex cursor-pointer hover:scale-105">
-          <Image
-            src="/icons/badge.svg"
-            alt="Superhost Badge"
-            width={84}
-            height={24}
+          <Badge
             className="relative"
             style={{ width: "auto", height: "auto" }}
           />

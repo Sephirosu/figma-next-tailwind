@@ -15,6 +15,7 @@ interface Picture {
   hobby: string;
   free: string;
   price: number;
+  rating: number;
 }
 
 const Property: React.FC = () => {
