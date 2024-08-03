@@ -2,21 +2,7 @@
 import PropertyCard from "./PropertyCard";
 import ShowMap from "./ShowMap";
 import { useEffect, useState } from "react";
-
-interface Picture {
-  id: number;
-  photo: string;
-  width: number;
-  height: number;
-  superhost: boolean;
-  multi?: boolean;
-  location: string;
-  owner: string;
-  hobby: string;
-  free: string;
-  price: number;
-  rating: number;
-}
+import { Picture } from "./types";
 
 const Property: React.FC = () => {
   const [pictures, setPictures] = useState<Picture[]>([]);

@@ -1,7 +1,13 @@
 [
   {
     "id": 1,
-    "photo": "/images/image1.png",
+    "photo": [
+      "/images/image1.png",
+      "/images/image2.png",
+      "/images/image3.png",
+      "/images/image4.png",
+      "/images/image5.png"
+    ],
     "rating": 4.92,
     "width": 291,
     "height": 275,
@@ -10,12 +16,17 @@
     "free": "2-8 Sept",
     "price": "12.415",
     "superhost": false,
-    "hobby": false,
-    "multi": true
+    "hobby": false
   },
   {
     "id": 2,
-    "photo": "/images/image2.png",
+    "photo": [
+      "/images/image2.png",
+      "/images/image3.png",
+      "/images/image4.png",
+      "/images/image5.png",
+      "/images/image6.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -24,12 +35,17 @@
     "free": "1-6 Aug",
     "price": "6.075",
     "superhost": false,
-    "hobby": "Hosting for 5 years",
-    "multi": true
+    "hobby": "Hosting for 5 years"
   },
   {
     "id": 3,
-    "photo": "/images/image3.png",
+    "photo": [
+      "/images/image3.png",
+      "/images/image4.png",
+      "/images/image5.png",
+      "/images/image6.png",
+      "/images/image1.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -38,12 +54,17 @@
     "free": "6-13 Aug",
     "price": "12.955",
     "superhost": true,
-    "hobby": "Food artist",
-    "multi": false
+    "hobby": "Food artist"
   },
   {
     "id": 4,
-    "photo": "/images/image4.png",
+    "photo": [
+      "/images/image4.png",
+      "/images/image5.png",
+      "/images/image6.png",
+      "/images/image1.png",
+      "/images/image2.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -52,12 +73,17 @@
     "free": "11-16 Aug",
     "price": "87.42",
     "superhost": false,
-    "hobby": "Artist",
-    "multi": false
+    "hobby": "Artist"
   },
   {
     "id": 5,
-    "photo": "/images/image5.png",
+    "photo": [
+      "/images/image5.png",
+      "/images/image6.png",
+      "/images/image1.png",
+      "/images/image2.png",
+      "/images/image3.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -66,12 +92,17 @@
     "free": "2-8 Sept",
     "price": "3.35",
     "superhost": true,
-    "hobby": "Sensei",
-    "multi": false
+    "hobby": "Sensei"
   },
   {
     "id": 6,
-    "photo": "/images/image6.png",
+    "photo": [
+      "/images/image6.png",
+      "/images/image1.png",
+      "/images/image2.png",
+      "/images/image3.png",
+      "/images/image4.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -80,12 +111,17 @@
     "free": "1-3 Sept",
     "price": "13.13",
     "superhost": false,
-    "hobby": "Fitness coach",
-    "multi": false
+    "hobby": "Fitness coach"
   },
   {
     "id": 7,
-    "photo": "/images/image7.png",
+    "photo": [
+      "/images/image1.png",
+      "/images/image2.png",
+      "/images/image3.png",
+      "/images/image4.png",
+      "/images/image5.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -94,12 +130,17 @@
     "free": "21-29 Sept",
     "price": "6.32",
     "superhost": false,
-    "hobby": "My owner",
-    "multi": false
+    "hobby": "My owner"
   },
   {
     "id": 8,
-    "photo": "/images/image8.png",
+    "photo": [
+      "/images/image2.png",
+      "/images/image3.png",
+      "/images/image4.png",
+      "/images/image5.png",
+      "/images/image6.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -108,12 +149,17 @@
     "free": "7-13 Sept",
     "price": "9.69",
     "superhost": true,
-    "hobby": false,
-    "multi": false
+    "hobby": false
   },
   {
     "id": 9,
-    "photo": "/images/image3.png",
+    "photo": [
+      "/images/image3.png",
+      "/images/image4.png",
+      "/images/image5.png",
+      "/images/image6.png",
+      "/images/image1.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -122,12 +168,17 @@
     "free": "12-13 Sept",
     "price": "13.45",
     "superhost": false,
-    "hobby": false,
-    "multi": true
+    "hobby": false
   },
   {
     "id": 10,
-    "photo": "/images/image3.png",
+    "photo": [
+      "/images/image4.png",
+      "/images/image5.png",
+      "/images/image6.png",
+      "/images/image1.png",
+      "/images/image2.png"
+    ],
     "rating": 4.49,
     "width": 291,
     "height": 275,
@@ -135,12 +186,17 @@
     "owner": "Cristiano Ronaldo",
     "free": "25-27 Aug",
     "price": "15.43",
-    "superhost": "Goat",
-    "multi": true
+    "superhost": "Goat"
   },
   {
     "id": 11,
-    "photo": "/images/image5.png",
+    "photo": [
+      "/images/image5.png",
+      "/images/image6.png",
+      "/images/image1.png",
+      "/images/image2.png",
+      "/images/image3.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -149,12 +205,17 @@
     "free": "1-2 December",
     "price": "12.415",
     "superhost": false,
-    "hobby": false,
-    "multi": true
+    "hobby": false
   },
   {
     "id": 12,
-    "photo": "/images/image7.png",
+    "photo": [
+      "/images/image6.png",
+      "/images/image1.png",
+      "/images/image2.png",
+      "/images/image3.png",
+      "/images/image4.png"
+    ],
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -163,7 +224,6 @@
     "free": "2-8 Sept",
     "price": "12.415",
     "superhost": false,
-    "hobby": false,
-    "multi": true
+    "hobby": false
   }
 ]
