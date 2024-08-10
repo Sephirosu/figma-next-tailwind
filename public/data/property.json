@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "photo": [
+    "photos": [
       "/images/image1.png",
       "/images/image2.png",
       "/images/image3.png",
@@ -20,7 +20,7 @@
   },
   {
     "id": 2,
-    "photo": [
+    "photos": [
       "/images/image2.png",
       "/images/image3.png",
       "/images/image4.png",
@@ -39,7 +39,7 @@
   },
   {
     "id": 3,
-    "photo": [
+    "photos": [
       "/images/image3.png",
       "/images/image4.png",
       "/images/image5.png",
@@ -58,7 +58,7 @@
   },
   {
     "id": 4,
-    "photo": [
+    "photos": [
       "/images/image4.png",
       "/images/image5.png",
       "/images/image6.png",
@@ -77,7 +77,7 @@
   },
   {
     "id": 5,
-    "photo": [
+    "photos": [
       "/images/image5.png",
       "/images/image6.png",
       "/images/image1.png",
@@ -96,7 +96,7 @@
   },
   {
     "id": 6,
-    "photo": [
+    "photos": [
       "/images/image6.png",
       "/images/image1.png",
       "/images/image2.png",
@@ -115,7 +115,7 @@
   },
   {
     "id": 7,
-    "photo": [
+    "photos": [
       "/images/image1.png",
       "/images/image2.png",
       "/images/image3.png",
@@ -134,7 +134,7 @@
   },
   {
     "id": 8,
-    "photo": [
+    "photos": [
       "/images/image2.png",
       "/images/image3.png",
       "/images/image4.png",
@@ -153,7 +153,7 @@
   },
   {
     "id": 9,
-    "photo": [
+    "photos": [
       "/images/image3.png",
       "/images/image4.png",
       "/images/image5.png",
@@ -172,7 +172,7 @@
   },
   {
     "id": 10,
-    "photo": [
+    "photos": [
       "/images/image4.png",
       "/images/image5.png",
       "/images/image6.png",
@@ -190,7 +190,7 @@
   },
   {
     "id": 11,
-    "photo": [
+    "photos": [
       "/images/image5.png",
       "/images/image6.png",
       "/images/image1.png",
@@ -209,7 +209,7 @@
   },
   {
     "id": 12,
-    "photo": [
+    "photos": [
       "/images/image6.png",
       "/images/image1.png",
       "/images/image2.png",

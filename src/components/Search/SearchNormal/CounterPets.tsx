@@ -1,14 +1,12 @@
-import React from "react";
 import Counter from "./Counter";
+import { CounterPetsProps } from "@/types";
 
-interface CounterPetsProps {
-  pets: number;
-  setPets: React.Dispatch<React.SetStateAction<number>>;
-  totalGuests: number;
-  maxTotal: number;
-}
-
-const CounterPets: React.FC<CounterPetsProps> = ({ pets, setPets, totalGuests, maxTotal }) => {
+const CounterPets: React.FC<CounterPetsProps> = ({
+  pets,
+  setPets,
+  totalGuests,
+  maxTotal,
+}) => {
   const handleIncrement = () => {
     setPets((prev) => (totalGuests < maxTotal ? prev + 1 : prev));
   };

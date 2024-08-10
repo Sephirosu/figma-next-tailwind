@@ -1,20 +1,15 @@
 import { useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
+import { CarouselProps } from "@/types";
 
-interface CarouselProps {
-  photo: string[];
-  width: number;
-  height: number;
-}
-
-export default function Carousel({ photo, width, height }: CarouselProps) {
+export default function Carousel({ photos, width, height }: CarouselProps) {
   const [curr, setCurr] = useState(0);
 
   const prev = () =>
-    setCurr((curr) => (curr === 0 ? photo.length - 1 : curr - 1));
+    setCurr((curr) => (curr === 0 ? photos.length - 1 : curr - 1));
   const next = () =>
-    setCurr((curr) => (curr === photo.length - 1 ? 0 : curr + 1));
+    setCurr((curr) => (curr === photos.length - 1 ? 0 : curr + 1));
 
   return (
     <div className="overflow-hidden relative">
@@ -22,7 +17,7 @@ export default function Carousel({ photo, width, height }: CarouselProps) {
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {photo.map((src, index) => (
+        {photos.map((src, index) => (
           <div key={index} className="min-w-full flex-shrink-0">
             <Image
               src={src}
@@ -52,7 +47,7 @@ export default function Carousel({ photo, width, height }: CarouselProps) {
 
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-1">
-          {photo.map((_, i) => (
+          {photos.map((_, i) => (
             <div
               key={i}
               className={`transition-all w-1.5 h-1.5 bg-white rounded-full ${

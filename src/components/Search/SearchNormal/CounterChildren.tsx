@@ -1,12 +1,5 @@
-
 import Counter from "./Counter";
-
-interface CounterChildrenProps {
-  child: number;
-  setChildren: React.Dispatch<React.SetStateAction<number>>;
-  totalGuests: number;
-  maxTotal: number;
-}
+import { CounterChildrenProps } from "@/types";
 
 const CounterChildren: React.FC<CounterChildrenProps> = ({
   child,

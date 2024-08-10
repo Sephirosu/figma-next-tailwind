@@ -1,8 +1,8 @@
 "use client";
 
 import Search from "./SearchNormal/Search";
-import Searchsmall from "./SearchSmall/Searchsmall";
-import useScreenSize from "../hooks/useScreenSize";
+import Searchsmall from "./SearchMobile/Searchsmall";
+import { useScreenSize } from "@/app/hooks";
 
 const SearchAll: React.FC = () => {
   const isSmallScreen = useScreenSize();

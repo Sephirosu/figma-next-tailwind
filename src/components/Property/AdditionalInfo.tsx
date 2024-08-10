@@ -1,9 +1,5 @@
 import Ratings from "./Ratings";
-
-interface AdditionalInfoProps {
-  location: string;
-  rating: number;
-}
+import { AdditionalInfoProps } from "@/types";
 
 const AdditionalInfo: React.FC<AdditionalInfoProps> = ({
   location,

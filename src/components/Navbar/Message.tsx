@@ -1,6 +1,4 @@
-interface MessageProps {
-  message: string;
-}
+import { MessageProps } from "@/types";
 
 const Message: React.FC<MessageProps> = ({ message }) => {
   return <div>{message}</div>;

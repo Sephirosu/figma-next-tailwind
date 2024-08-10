@@ -2,11 +2,7 @@ import { useState } from "react";
 import { useCombobox } from "downshift";
 import { countries } from "countries-list";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-
-interface Suggestion {
-  label: string;
-  value: string;
-}
+import { Suggestion } from "@/types";
 
 const countryOptions: Suggestion[] = Object.values(countries).map(
   (country) => ({

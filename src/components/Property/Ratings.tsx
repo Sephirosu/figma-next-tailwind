@@ -1,8 +1,5 @@
 import { FaStar } from "react-icons/fa";
-
-interface RatingsProps {
-  rating: number;
-}
+import { RatingsProps } from "@/types";
 
 const Ratings: React.FC<RatingsProps> = ({ rating }) => {
   return (

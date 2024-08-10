@@ -1,13 +1,5 @@
-interface Picture {
-  owner: string;
-  hobby: string;
-  free: string;
-  price: number;
-}
+import { MoreAdditionalInfoProps } from "@/types";
 
-interface MoreAdditionalInfoProps {
-  picture: Picture;
-}
 const MoreAditionalInfo: React.FC<MoreAdditionalInfoProps> = ({ picture }) => {
   return (
     <>

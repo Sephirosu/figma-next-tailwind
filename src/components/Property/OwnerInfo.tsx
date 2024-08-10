@@ -1,7 +1,4 @@
-interface OwnerInfoProps {
-  owner: string;
-  hobby: string;
-}
+import { OwnerInfoProps } from "@/types";
 
 const OwnerInfo: React.FC<OwnerInfoProps> = ({ owner, hobby }) => {
   return (

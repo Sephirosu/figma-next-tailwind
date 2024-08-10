@@ -1,5 +1,4 @@
-import AddedInfo from "./AddedInfo";
-import FooterLinks from "./FooterLinks";
+import { AddedInfo, FooterLinks } from "@components/Footer";
 
 const Footer: React.FC = () => {
   return (

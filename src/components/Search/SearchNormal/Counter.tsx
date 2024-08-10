@@ -1,17 +1,7 @@
-
 import { BsPlusCircle } from "react-icons/bs";
 import { SlMinus } from "react-icons/sl";
 import Button from "@/app/Button";
-
-interface CounterProps {
-  label: string;
-  description: string;
-  value: number;
-  onIncrement: () => void;
-  onDecrement: () => void;
-  maxTotal: number;
-  totalGuests: number;
-}
+import { CounterProps } from "@/types";
 
 const Counter: React.FC<CounterProps> = ({
   label,

@@ -1,19 +1,18 @@
 "use client";
-import PropertyCard from "./PropertyCard";
-import ShowMap from "./ShowMap";
+import { PropertyCard, ShowMap } from "@/components/Property";
 import { useEffect, useState } from "react";
-import { Picture } from "./types";
+import { Apartments } from "@/types";
 
 const Property: React.FC = () => {
-  const [pictures, setPictures] = useState<Picture[]>([]);
+  const [properties, setProperties] = useState<Apartments[]>([]);
   const [showMap, setShowMap] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("data/property.json");
-        const result: Picture[] = await response.json();
-        setPictures(result);
+        const result: Apartments[] = await response.json();
+        setProperties(result);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -37,8 +36,8 @@ const Property: React.FC = () => {
 
   return (
     <div className="grid font-poppins grid-cols-1 mt-[32px] gap-[37px] mx-8 lg:mx-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:mx-10 2xl:grid-cols-4">
-      {pictures.map((picture) => (
-        <PropertyCard key={picture.id} picture={picture} />
+      {properties.map((properties) => (
+        <PropertyCard key={properties.id} properties={properties} />
       ))}
 
       {showMap && <ShowMap />}

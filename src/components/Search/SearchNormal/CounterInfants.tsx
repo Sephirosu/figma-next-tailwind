@@ -1,14 +1,12 @@
-
 import Counter from "./Counter";
+import { CounterInfantsProps } from "@/types";
 
-interface CounterInfantsProps {
-  infants: number;
-  setInfants: React.Dispatch<React.SetStateAction<number>>;
-  totalGuests: number;
-  maxTotal: number;
-}
-
-const CounterInfants: React.FC<CounterInfantsProps> = ({ infants, setInfants, totalGuests, maxTotal }) => {
+const CounterInfants: React.FC<CounterInfantsProps> = ({
+  infants,
+  setInfants,
+  totalGuests,
+  maxTotal,
+}) => {
   const handleIncrement = () => {
     setInfants((prev) => (totalGuests < maxTotal ? prev + 1 : prev));
   };

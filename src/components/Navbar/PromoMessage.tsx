@@ -1,8 +1,5 @@
 import Message from "./Message";
-
-interface PromoMessageProps {
-  message: string;
-}
+import { PromoMessageProps } from "@/types";
 
 const PromoMessage: React.FC<PromoMessageProps> = ({ message }) => {
   return (

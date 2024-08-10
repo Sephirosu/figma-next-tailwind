@@ -1,8 +1,10 @@
-import Where from "./Where";
-import CheckIn from "./CheckIn";
-import CheckOut from "./CheckOut";
-import Who from "./Who";
-import SearchButton from "./SearchButton";
+import {
+  Where,
+  CheckIn,
+  CheckOut,
+  Who,
+  SearchButton,
+} from "@/components/Search/SearchNormal";
 
 const Search: React.FC = () => {
   return (

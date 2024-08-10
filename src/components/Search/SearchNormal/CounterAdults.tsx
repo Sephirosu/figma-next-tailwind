@@ -1,12 +1,5 @@
-
 import Counter from "./Counter";
-
-interface CounterAdultsProps {
-  adults: number;
-  setAdults: React.Dispatch<React.SetStateAction<number>>;
-  totalGuests: number;
-  maxTotal: number;
-}
+import { CounterAdultsProps } from "@/types";
 
 const CounterAdults: React.FC<CounterAdultsProps> = ({
   adults,

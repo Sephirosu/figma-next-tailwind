@@ -1,6 +1,4 @@
-import Logo from "./Logo";
-import MiddleText from "./MiddleText";
-import NavLinks from "./NavLinks";
+import { Logo, MiddleText, NavLinks } from "@components/Navbar";
 
 const Navbar: React.FC = () => {
   return (

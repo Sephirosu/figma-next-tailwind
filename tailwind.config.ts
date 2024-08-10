@@ -46,6 +46,7 @@ const config: Config = {
         xxs: "280px",
         xs: "320px",
         oneplus: "412px",
+        dininofirni: "170px",
       },
     },
   },

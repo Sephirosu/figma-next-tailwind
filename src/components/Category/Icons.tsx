@@ -1,17 +1,5 @@
-import { RefObject } from "react";
 import Image from "next/image";
-
-type Icon = {
-  id: number;
-  photo: string;
-  width: number;
-  height: number;
-};
-
-type IconsProps = {
-  containerRef: RefObject<HTMLDivElement>;
-  icons: Icon[];
-};
+import { IconsProps } from "@/types";
 
 const Icons: React.FC<IconsProps> = ({ containerRef, icons }) => {
   return (

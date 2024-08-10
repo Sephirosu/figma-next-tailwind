@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import Button from "@/app/Button";
-import CounterAdults from "./CounterAdults";
-import CounterChildren from "./CounterChildren";
-import CounterInfants from "./CounterInfants";
-import CounterPets from "./CounterPets";
-
-interface WhoOpenProps {
-  closeWho: () => void;
-  setTotal: (total: number) => void;
-}
+import {
+  CounterAdults,
+  CounterChildren,
+  CounterInfants,
+  CounterPets,
+} from "@/components/Search/SearchNormal";
+import { WhoOpenProps } from "@/types";
 
 const WhoOpen: React.FC<WhoOpenProps> = ({ closeWho, setTotal }) => {
   const [adults, setAdults] = useState<number>(0);

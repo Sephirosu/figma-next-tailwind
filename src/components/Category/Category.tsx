@@ -1,15 +1,7 @@
 "use client";
 import { useState, useEffect, useRef, useCallback } from "react";
-import ButtonRight from "./ArrowRight";
-import ButtonLeft from "./ArrowLeft";
-import Icons from "./Icons";
-
-type Icon = {
-  id: number;
-  photo: string;
-  width: number;
-  height: number;
-};
+import { Icons, ButtonLeft, ButtonRight } from "@components/Category";
+import { Icon } from "@/types";
 
 const Category: React.FC = () => {
   const [icons, setIcons] = useState<Icon[]>([]);

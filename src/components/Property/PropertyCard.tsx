@@ -1,19 +1,18 @@
-import PictureHeart from "./PictureHeart";
-import PictureSuperhost from "./PictureSuperhost";
-import AdditionalInfo from "./AdditionalInfo";
-import OwnerInfo from "./OwnerInfo";
-import AvailablePrice from "./AvailablePrice";
-import Carousel from "./Carousel";
-import { Picture } from "./types";
+import {
+  FavouriteIcon,
+  SuperhostBadge,
+  AdditionalInfo,
+  OwnerInfo,
+  AvailablePrice,
+  Carousel,
+} from "@components/Property";
 
-interface PropertyCardProps {
-  picture: Picture;
-}
+import { PropertyCardProps } from "@/types";
 
-const PropertyCard: React.FC<PropertyCardProps> = ({ picture }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({ properties }) => {
   const {
     id,
-    photo,
+    photos,
     superhost,
     location,
     owner,
@@ -23,12 +22,12 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ picture }) => {
     rating,
     height,
     width,
-  } = picture;
+  } = properties;
   return (
     <div key={id} className="relative">
-      <Carousel photo={photo} width={width} height={height} />
-      <PictureHeart />
-      <PictureSuperhost superhost={superhost} />
+      <Carousel photos={photos} width={width} height={height} />
+      <FavouriteIcon />
+      <SuperhostBadge superhost={superhost} />
       <AdditionalInfo location={location} rating={rating} />
       <OwnerInfo owner={owner} hobby={hobby} />
       <AvailablePrice free={free} price={price} />

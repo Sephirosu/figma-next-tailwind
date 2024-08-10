@@ -1,9 +1,6 @@
 import Button from "@/app/Button";
 import { MdKeyboardArrowRight } from "react-icons/md";
-
-type ArrowRightProps = {
-  scrollRight: () => void;
-};
+import { ArrowRightProps } from "@/types";
 
 const ButtonRight: React.FC<ArrowRightProps> = ({ scrollRight }) => {
   return (
