@@ -6,7 +6,7 @@ import {
   ModalCounterInfants,
   ModalCounterPets,
   ConfirmButton,
-} from "@/components/Search/SearchMobile/Modal";
+} from "@/features/Search/SearchMobile/Modal";
 
 const ModalCounter: React.FC = () => {
   const [adults, setAdults] = useState<number>(0);

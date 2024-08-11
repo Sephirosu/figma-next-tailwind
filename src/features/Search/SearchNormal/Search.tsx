@@ -4,7 +4,7 @@ import {
   CheckOut,
   Who,
   SearchButton,
-} from "@/components/Search/SearchNormal";
+} from "@/features/Search/SearchNormal";
 
 const Search: React.FC = () => {
   return (

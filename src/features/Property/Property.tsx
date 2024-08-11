@@ -1,5 +1,5 @@
 "use client";
-import { PropertyCard, ShowMap } from "@/components/Property";
+import { PropertyCard, ShowMap } from "@/features/Property";
 import { useEffect, useState } from "react";
 import { Apartments } from "@/types";
 

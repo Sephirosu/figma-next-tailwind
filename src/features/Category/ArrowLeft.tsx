@@ -1,4 +1,4 @@
-import Button from "@app/Button";
+import Button from "@/app/components/Button";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { ArrowLeftProps } from "@/types";
 

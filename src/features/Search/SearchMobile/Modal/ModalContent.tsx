@@ -3,7 +3,7 @@ import {
   ModalCheckin,
   ModalCheckout,
   ModalWho,
-} from "@/components/Search/SearchMobile/Modal";
+} from "@/features/Search/SearchMobile/Modal";
 
 const ModalContent = () => {
   return (

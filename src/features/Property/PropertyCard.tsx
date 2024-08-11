@@ -5,7 +5,7 @@ import {
   OwnerInfo,
   AvailablePrice,
   Carousel,
-} from "@components/Property";
+} from "@/features/Property";
 
 import { PropertyCardProps } from "@/types";
 

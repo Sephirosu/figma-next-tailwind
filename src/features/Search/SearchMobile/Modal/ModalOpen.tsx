@@ -3,7 +3,7 @@ import {
   CloseModalButton,
   ModalContent,
   ModalFooter,
-} from "@/components/Search/SearchMobile/Modal";
+} from "@/features/Search/SearchMobile/Modal";
 
 const ModalOpen: React.FC<{
   closeModal: () => void;

@@ -1,4 +1,4 @@
-import { Logo, MiddleText, NavLinks } from "@components/Navbar";
+import { Logo, MiddleText, NavLinks } from "@/features/Navbar";
 
 const Navbar: React.FC = () => {
   return (

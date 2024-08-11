@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
+import Button from "@/app/components/Button";
 import { CarouselProps } from "@/types";
 
 export default function Carousel({ photos, width, height }: CarouselProps) {
@@ -18,7 +19,7 @@ export default function Carousel({ photos, width, height }: CarouselProps) {
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {photos.map((src, index) => (
-          <div key={index} className="min-w-full flex-shrink-0">
+          <div key={index} className="min-w-full shrink-1">
             <Image
               src={src}
               alt={`Picture ${index}`}
@@ -31,18 +32,18 @@ export default function Carousel({ photos, width, height }: CarouselProps) {
         ))}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-3">
-        <button
+        <Button
           onClick={prev}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
         >
           <MdKeyboardArrowLeft size={20} />
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={next}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
         >
           <MdKeyboardArrowRight size={20} />
-        </button>
+        </Button>
       </div>
 
       <div className="absolute bottom-4 right-0 left-0">

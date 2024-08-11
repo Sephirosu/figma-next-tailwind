@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
-import Button from "@/app/Button";
+import Button from "@/app/components/Button";
 import {
   CounterAdults,
   CounterChildren,
   CounterInfants,
   CounterPets,
-} from "@/components/Search/SearchNormal";
+} from "@/features/Search/SearchNormal";
 import { WhoOpenProps } from "@/types";
 
 const WhoOpen: React.FC<WhoOpenProps> = ({ closeWho, setTotal }) => {

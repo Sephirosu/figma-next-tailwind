@@ -1,4 +1,4 @@
-import Button from "@app/Button";
+import Button from "@/app/components/Button";
 import { ConfirmButtonProps } from "@/types";
 
 const ConfirmButton: React.FC<ConfirmButtonProps> = ({ handleConfirm }) => {

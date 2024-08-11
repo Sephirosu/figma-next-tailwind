@@ -1,9 +1,9 @@
-import { BsPlusCircle } from "react-icons/bs";
 import { SlMinus } from "react-icons/sl";
-import Button from "@/app/Button";
-import { CounterProps } from "@/types";
+import { BsPlusCircle } from "react-icons/bs";
+import Button from "@/app/components/Button";
+import { ModalCounterProps } from "@/types";
 
-const Counter: React.FC<CounterProps> = ({
+const ModalCounter: React.FC<ModalCounterProps> = ({
   label,
   description,
   value,
@@ -22,7 +22,7 @@ const Counter: React.FC<CounterProps> = ({
         onClick={onDecrement}
         className="border rounded-full mx-2 text-gray-600"
       >
-        <SlMinus className="w-6 h-6" />
+        <SlMinus className="w-8 h-8" />
       </Button>
       <span className="font-lighter">{value}</span>
       {value < maxTotal && totalGuests < maxTotal && (
@@ -30,11 +30,11 @@ const Counter: React.FC<CounterProps> = ({
           onClick={onIncrement}
           className="border rounded-full mx-2 text-gray-600"
         >
-          <BsPlusCircle className="w-6 h-6" />
+          <BsPlusCircle className="w-8 h-8" />
         </Button>
       )}
     </div>
   </div>
 );
 
-export default Counter;
+export default ModalCounter;

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Icons, ButtonLeft, ButtonRight } from "@components/Category";
+import { Icons, ButtonLeft, ButtonRight } from "@/features/Category";
 import { Icon } from "@/types";
 
 const Category: React.FC = () => {

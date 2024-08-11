@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import Button from "@/app/Button";
+import Button from "@/app/components/Button";
 
 const CloseModalButton: React.FC<{ closeModal: () => void }> = ({
   closeModal,
