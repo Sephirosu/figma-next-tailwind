@@ -4,7 +4,7 @@ const formatDate = (
 ): string => {
   const options: Intl.DateTimeFormatOptions = {
     year: "2-digit",
-    month: "2-digit",
+    month: "short",
     day: "2-digit",
     timeZone: timeZone,
   };

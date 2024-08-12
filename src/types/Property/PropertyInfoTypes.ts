@@ -7,7 +7,10 @@ export interface Apartments {
   location: string;
   owner: string;
   hobby: string;
-  free: string;
+  availability: {
+    start: string;
+    end: string;
+  };
   price: number;
   rating: number;
 }
@@ -24,7 +27,10 @@ export interface CarouselProps {
 }
 
 export interface AvailablePriceProps {
-  free: string;
+  availability: {
+    start: string;
+    end: string;
+  };
   price: number;
 }
 

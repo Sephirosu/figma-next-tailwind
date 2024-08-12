@@ -17,7 +17,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ properties }) => {
     location,
     owner,
     hobby,
-    free,
+    availability,
     price,
     rating,
     height,
@@ -30,7 +30,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ properties }) => {
       <SuperhostBadge superhost={superhost} />
       <AdditionalInfo location={location} rating={rating} />
       <OwnerInfo owner={owner} hobby={hobby} />
-      <AvailablePrice free={free} price={price} />
+      <AvailablePrice availability={availability} price={price} />
     </div>
   );
 };

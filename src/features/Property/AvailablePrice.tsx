@@ -1,10 +1,19 @@
 import { CurrencyFormatter } from "@/utils";
 import { AvailablePriceProps } from "@/types";
+import formatDateRange from "@/utils/FormatDateRange";
 
-const AvailablePrice: React.FC<AvailablePriceProps> = ({ free, price }) => {
+const AvailablePrice: React.FC<AvailablePriceProps> = ({
+  availability,
+  price,
+}) => {
+  const formattedDateRange = formatDateRange(
+    availability.start,
+    availability.end
+  );
+
   return (
     <>
-      <div className="text-[12px] text-[#4c4c4c]">{free}</div>
+      <div className="text-[12px] text-[#4c4c4c]">{formattedDateRange}</div>
       <div className="text-[12px]">
         <span className="mt-[5px] font-black">
           <CurrencyFormatter amount={price} currency="USD" />
