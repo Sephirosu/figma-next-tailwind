@@ -1,8 +1,8 @@
 import { CurrencyFormatter } from "@/utils";
-import { AvailablePriceProps } from "@/types";
+import { PriceAndDateRangeProps } from "@/types";
 import formatDateRange from "@/utils/FormatDateRange";
 
-const AvailablePrice: React.FC<AvailablePriceProps> = ({
+const PriceAndDateRange: React.FC<PriceAndDateRangeProps> = ({
   availability,
   price,
 }) => {
@@ -24,4 +24,4 @@ const AvailablePrice: React.FC<AvailablePriceProps> = ({
   );
 };
 
-export default AvailablePrice;
+export default PriceAndDateRange;

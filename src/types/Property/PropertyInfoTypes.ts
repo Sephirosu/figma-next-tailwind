@@ -26,7 +26,7 @@ export interface CarouselProps {
   height: number;
 }
 
-export interface AvailablePriceProps {
+export interface PriceAndDateRangeProps {
   availability: {
     start: string;
     end: string;
