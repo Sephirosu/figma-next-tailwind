@@ -13,7 +13,7 @@ export default function Carousel({ photos, width, height }: CarouselProps) {
     setCurr((curr) => (curr === photos.length - 1 ? 0 : curr + 1));
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative rounded-lg">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
