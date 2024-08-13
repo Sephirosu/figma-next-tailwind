@@ -1,4 +1,4 @@
-import { SearchAll, Category, Property } from "@/features";
+import { SearchAll, Category, Property } from "@/app/components";
 
 const Page = () => {
   return (
