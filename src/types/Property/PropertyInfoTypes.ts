@@ -41,10 +41,6 @@ export interface Picture {
   price: number;
 }
 
-export interface MoreAdditionalInfoProps {
-  picture: Picture;
-}
-
 export interface OwnerInfoProps {
   owner: string;
   hobby: string;
@@ -60,4 +56,12 @@ export interface SuperhostBadgeProps {
 
 export interface PropertyCardProps {
   properties: Apartments;
+}
+
+export type HandleImageClick = (image: string) => void;
+
+export interface ImageModalProps {
+  isModalOpen: boolean;
+  selectedImage: string | null;
+  setIsModalOpen: (isOpen: boolean) => void;
 }
