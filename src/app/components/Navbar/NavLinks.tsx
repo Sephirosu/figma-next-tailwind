@@ -1,5 +1,5 @@
 "use client";
-import UserAccount from "./UserAccount";
+import { UserAccount } from "../UserAccount";
 import Frame2 from "@icons/frame1213.svg";
 
 const NavLinks: React.FC = () => {

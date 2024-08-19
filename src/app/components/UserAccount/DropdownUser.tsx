@@ -1,10 +1,6 @@
 import { SignedOut, SignedIn, SignInButton, SignUpButton } from "@clerk/nextjs";
 import Button from "@app/components/Buttons/Button";
-
-interface DropdownProps {
-  dropdownOpen: boolean;
-  handleSignOut: () => void;
-}
+import { DropdownProps } from "./types";
 
 const DropdownUser: React.FC<DropdownProps> = ({
   dropdownOpen,

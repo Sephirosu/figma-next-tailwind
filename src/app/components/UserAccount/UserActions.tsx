@@ -1,9 +1,6 @@
 import Frame from "@icons/frame2.svg";
 import { SignedOut, SignedIn, UserButton } from "@clerk/nextjs";
-
-interface UserActionsProps {
-  toggleDropdown: () => void;
-}
+import { UserActionsProps } from "./types";
 
 const UserActions: React.FC<UserActionsProps> = ({ toggleDropdown }) => {
   return (

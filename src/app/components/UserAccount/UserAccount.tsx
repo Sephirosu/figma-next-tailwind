@@ -1,8 +1,7 @@
-import UserActions from "./UserActions";
+import { UserActions, DropdownUser } from "@app/components/UserAccount";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@clerk/nextjs";
-import Dropdown from "./DropdownUser";
 
 const UserAccount = () => {
   const [isClient, setIsClient] = useState(false);
@@ -56,7 +55,7 @@ const UserAccount = () => {
   return (
     <div className="relative ml-6 mt-21 cursor-pointer z-50" ref={dropdownRef}>
       <UserActions toggleDropdown={toggleDropdown} />
-      <Dropdown dropdownOpen={dropdownOpen} handleSignOut={handleSignOut} />
+      <DropdownUser dropdownOpen={dropdownOpen} handleSignOut={handleSignOut} />
     </div>
   );
 };
