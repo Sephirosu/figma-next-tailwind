@@ -23,7 +23,8 @@
       "@icons/*": ["./public/icons/*"],
       "@utils/*": ["./src/utils/*"],
       "@app/*": ["./src/app/*"],
-      "@property/*": ["./src/app/property/[id]/"]
+      "@property/*": ["./src/app/property/[id]/"],
+      "@components/*": ["./src/components/*"]
     }
   },
   "include": [

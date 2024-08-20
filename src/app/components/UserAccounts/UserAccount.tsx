@@ -1,4 +1,4 @@
-import { UserActions, DropdownUser } from "@app/components/UserAccount";
+import { DropdownUser, UserActions } from "@/app/components/UserAccounts";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@clerk/nextjs";
