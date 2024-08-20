@@ -48,6 +48,9 @@ const config: Config = {
         oneplus: "412px",
         dininofirni: "170px",
       },
+      borderRadius: {
+        none: "0px",
+      },
     },
   },
   plugins: [],

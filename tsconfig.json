@@ -22,7 +22,9 @@
       "@types/*": ["./src/types/*"],
       "@icons/*": ["./public/icons/*"],
       "@utils/*": ["./src/utils/*"],
-      "@app/*": ["./src/app/*"]
+      "@app/*": ["./src/app/*"],
+      "@property/*": ["./src/app/property/[id]/"],
+      "@components/*": ["./src/components/*"]
     }
   },
   "include": [
@@ -30,7 +32,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/property/[id]/components/Favouritetsx"
   ],
 
   "exclude": ["node_modules"]
