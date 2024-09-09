@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaTimes } from "react-icons/fa";
 import { ImageModalProps } from "@/types";
+import Button from "@/app/components/Buttons/Button";
 
 const ImageModal: React.FC<ImageModalProps> = ({
   isModalOpen,
@@ -13,17 +14,19 @@ const ImageModal: React.FC<ImageModalProps> = ({
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 px-4"
           onClick={() => setIsModalOpen(false)}
+          aria-hidden="true"
         >
           <div
             className="relative  rounded-lg"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
+            <Button
               className="absolute -top-10 right-1 text-gray-400 text-2xl"
               onClick={() => setIsModalOpen(false)}
+              aria-label="Close image modal"
             >
               <FaTimes />
-            </button>
+            </Button>
             <Image
               src={selectedImage}
               alt="Zoomed"

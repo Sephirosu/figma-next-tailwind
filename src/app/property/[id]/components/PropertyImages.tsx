@@ -1,36 +1,30 @@
 import Image from "next/image";
-import { Apartments } from "@/types";
-import { HandleImageClick } from "@/types";
+import { ImagesAllProps } from "@/types";
 
-interface ImagesAllProps {
-  property: Apartments;
-  handleImageClick: HandleImageClick;
-}
-
-const ImagesAllDynamic: React.FC<ImagesAllProps> = ({
+const PropertyImages: React.FC<ImagesAllProps> = ({
   property,
   handleImageClick,
 }) => {
   return (
-    <div className="flex flex-col lg:flex-row gap-2 ">
-      <div className="flex-grow lg:w-2/3">
+    <div className="flex flex-col md:flex-row gap-2 md:gap-1">
+      <div className="flex-grow md:w-1/2 lg:w-1/2">
         <Image
           src={property.photos[0]}
-          alt="Main Photo"
+          alt="Main Photo of the Property"
           width={800}
           height={600}
-          className="w-full h-auto object-cover cursor-pointer rounded-none"
+          className="w-full h-auto object-cover cursor-pointer rounded-none md:rounded-lg"
           onClick={() => handleImageClick(property.photos[0])}
           priority
         />
       </div>
 
-      <div className="grid grid-cols-2 grid-rows-2 gap-2 lg:w-1/2 ">
+      <div className="grid grid-cols-2 grid-rows-2 gap-2 md:gap-1 md:w-1/2 lg:w-1/2">
         {property.photos.slice(1, 5).map((photo, index) => (
-          <div key={index} className="relative w-full h-full ">
+          <div key={index} className="relative w-full h-full">
             <Image
               src={photo}
-              alt={`Photo ${index + 2}`}
+              alt={`Additional photo ${index + 2} of the property`}
               width={400}
               height={300}
               className="w-full h-full object-cover rounded-lg cursor-pointer"
@@ -44,4 +38,4 @@ const ImagesAllDynamic: React.FC<ImagesAllProps> = ({
   );
 };
 
-export default ImagesAllDynamic;
+export default PropertyImages;

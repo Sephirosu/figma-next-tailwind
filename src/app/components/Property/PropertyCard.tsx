@@ -11,7 +11,7 @@ import {
 
 import { PropertyCardProps } from "@/types";
 
-const PropertyCard: React.FC<PropertyCardProps> = ({ properties }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const {
     id,
     photos,
@@ -24,7 +24,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ properties }) => {
     rating,
     height,
     width,
-  } = properties;
+  } = property;
   return (
     <div key={id} className="relative ">
       <Link href={`/property/${id}`}>

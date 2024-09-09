@@ -2,14 +2,21 @@
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Apartments } from "@/types";
-import { FavouriteIcon } from "@/app/components/Property";
 import {
+  ApartmentName,
   ImageModal,
-  SuperhostDynamic,
-  OwnerStatsDynamic,
-  ImagesAllDynamic,
-  StatsDynamic,
-  BackDynamic,
+  PropertyImages,
+  ApartmentDetails,
+  ApartmentFeedback,
+  Hoster,
+  ApartmentFeatures,
+  Schedule,
+  ApartmentAbout,
+  AmenitiesList,
+  AccesibilityFeature,
+  OverallRating,
+  SingleRating,
+  ScheduleTabletMobile,
 } from "./components";
 
 const PropertyPageDetails = () => {
@@ -38,7 +45,7 @@ const PropertyPageDetails = () => {
 
         setProperty(foundProperty ?? null);
       } catch (error) {
-        console.error("Error", error);
+        console.error("Error", error); // trenutno,dok ne skontamo kakve cemo errore koristiti,biznis logika ?!
       }
     };
 
@@ -52,25 +59,39 @@ const PropertyPageDetails = () => {
   }
 
   return (
-    <div className="container mx-auto  px-9 max-w-screen-xl ">
-      <div className="md:mx-2 lg:mx-10 ">
-        <BackDynamic />
-
-        <div className="relative left-4 top-1 select-none ">
-          <FavouriteIcon />
-        </div>
-        <SuperhostDynamic property={property} />
-        <OwnerStatsDynamic property={property} />
+    <div className="mx-auto px-9 max-w-screen-xl">
+      <div className="md:mx-2 lg:mx-10 xxs:mx-0">
+        <ApartmentName property={property} />
         <ImageModal
           isModalOpen={isModalOpen}
           selectedImage={selectedImage}
           setIsModalOpen={setIsModalOpen}
         />
-        <ImagesAllDynamic
+        <PropertyImages
           property={property}
           handleImageClick={handleImageClick}
         />
-        <StatsDynamic property={property} />
+        <div className="lg:flex">
+          <div className="container flex flex-col lg:w-2/3">
+            <ApartmentDetails property={property} />
+            <ApartmentFeedback property={property} />
+            <Hoster property={property} />
+            <ApartmentFeatures property={property} />
+            <ApartmentAbout property={property} />
+            <AmenitiesList property={property} />
+            <AccesibilityFeature property={property} />
+            <ScheduleTabletMobile property={property} />
+          </div>
+          <div className="lg:w-1/3 lg:pl-6 relative">
+            <div className="sticky top-6 space-y-4 hidden lg:block">
+              <Schedule property={property} />
+            </div>
+          </div>
+        </div>
+        <div>
+          <OverallRating property={property} />
+          <SingleRating property={property} />
+        </div>
       </div>
     </div>
   );

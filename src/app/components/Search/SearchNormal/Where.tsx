@@ -28,10 +28,10 @@ const Where: React.FC = () => {
             {suggestions.map((suggestion, index) => (
               <li
                 key={index}
-                className="flex items-center px-4 py-4 hover:bg-gray-100 cursor-pointer"
+                className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
                 onClick={() => handleSuggestionClick(suggestion)}
               >
-                <div className="mr-3 ">
+                <div className="mr-3 bg-gray-300 p-3 rounded-lg">
                   <SlLocationPin />
                 </div>
                 <div className="flex flex-col">
