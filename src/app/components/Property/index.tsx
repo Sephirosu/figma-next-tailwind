@@ -1,5 +1,5 @@
 export { default as AdditionalInfo } from "./AdditionalInfo";
-export { default as AvailablePrice } from "./PriceAndDateRange";
+export { default as PriceAndDateRange } from "./PriceAndDateRange";
 export { default as Carousel } from "./Carousel";
 export { default as FavouriteIcon } from "./FavouriteIcon";
 export { default as OwnerInfo } from "./OwnerInfo";

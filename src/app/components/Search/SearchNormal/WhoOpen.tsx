@@ -36,10 +36,15 @@ const WhoOpen: React.FC<WhoOpenProps> = ({ closeWho, setTotal }) => {
 
   const totalGuests = adults + child + infants + pets;
 
+  const handleClose = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    closeWho();
+  };
+
   return (
     <div className="absolute modal-content -ml-32 z-10 mt-20 rounded-3xl font-poppins h-96 w-96 bg-white space-y-6 border-black p-6">
       <div className="flex justify-end mr-2.5">
-        <Button onClick={closeWho} className="self-end ">
+        <Button onClick={handleClose} className="self-end ">
           <FaTimes />
         </Button>
       </div>

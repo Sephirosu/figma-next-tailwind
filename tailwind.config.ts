@@ -47,6 +47,11 @@ const config: Config = {
         xs: "320px",
         oneplus: "412px",
         dininofirni: "170px",
+        smxs: "480px",
+        gagi: "370px",
+      },
+      borderRadius: {
+        none: "0px",
       },
     },
   },
