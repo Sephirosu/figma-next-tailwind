@@ -12,6 +12,17 @@ export default function Carousel({ photos, width, height }: CarouselProps) {
   const next = () =>
     setCurr((curr) => (curr === photos.length - 1 ? 0 : curr + 1));
 
+  const handlePrevClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    prev();
+  };
+
+  const handleNextClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    next();
+  };
   return (
     <div className="overflow-hidden relative rounded-lg">
       <div
@@ -33,14 +44,14 @@ export default function Carousel({ photos, width, height }: CarouselProps) {
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-3">
         <Button
-          onClick={prev}
+          onClick={handlePrevClick}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
         >
           <MdKeyboardArrowLeft size={20} />
         </Button>
         <Button
-          onClick={next}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          onClick={handleNextClick}
         >
           <MdKeyboardArrowRight size={20} />
         </Button>
