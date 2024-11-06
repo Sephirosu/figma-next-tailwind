@@ -1,15 +1,17 @@
+import Link from "next/link";
+
 import {
   FavouriteIcon,
   SuperhostBadge,
   AdditionalInfo,
   OwnerInfo,
-  AvailablePrice,
+  PriceAndDateRange,
   Carousel,
 } from "@app/components/Property";
 
 import { PropertyCardProps } from "@/types";
 
-const PropertyCard: React.FC<PropertyCardProps> = ({ properties }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const {
     id,
     photos,
@@ -22,15 +24,17 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ properties }) => {
     rating,
     height,
     width,
-  } = properties;
+  } = property;
   return (
-    <div key={id} className="relative">
-      <Carousel photos={photos} width={width} height={height} />
+    <div key={id} className="relative ">
+      <Link href={`/property/${id}`}>
+        <Carousel photos={photos} width={width} height={height} />
+      </Link>
       <FavouriteIcon />
       <SuperhostBadge superhost={superhost} />
       <AdditionalInfo location={location} rating={rating} />
       <OwnerInfo owner={owner} hobby={hobby} />
-      <AvailablePrice availability={availability} price={price} />
+      <PriceAndDateRange availability={availability} price={price} />
     </div>
   );
 };

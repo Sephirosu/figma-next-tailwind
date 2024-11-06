@@ -46,7 +46,7 @@ export interface DatePickerCalendarProps {
   placeholder?: string;
   dateFormat?: string;
   className?: string;
-  onChange?: (date: string | (string | null)[] | null) => void;
+  onChange?: (date: Date | [Date, Date] | null) => void;
   selectedDate?: Date | null;
   minDate?: Date;
   maxDate?: Date;

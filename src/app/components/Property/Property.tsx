@@ -36,8 +36,8 @@ const Property: React.FC = () => {
 
   return (
     <div className="grid font-poppins grid-cols-1 mt-[32px] gap-[37px] mx-8 lg:mx-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:mx-10 2xl:grid-cols-4">
-      {properties.map((properties) => (
-        <PropertyCard key={properties.id} properties={properties} />
+      {properties.map((property) => (
+        <PropertyCard key={property.id} property={property} />
       ))}
 
       {showMap && <ShowMap />}

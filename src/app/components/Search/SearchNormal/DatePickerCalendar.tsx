@@ -28,13 +28,15 @@ const DatePickerCalendar: React.FC<DatePickerCalendarProps> = ({
     setDate(date);
     if (onChange) {
       const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
       if (Array.isArray(date)) {
-        const formattedDates = date.map((d) =>
-          d ? formatDate(d, userTimeZone) : null
-        );
+        const [startDate, endDate] = date;
+        const formattedDates: [Date, Date] | null =
+          startDate && endDate ? [startDate, endDate] : null;
         onChange(formattedDates);
       } else {
-        onChange(date ? formatDate(date, userTimeZone) : null);
+        const formattedDate = date ? formatDate(date, userTimeZone) : null;
+        onChange(formattedDate ? new Date(formattedDate) : null);
       }
     }
   };
@@ -59,7 +61,7 @@ const DatePickerCalendar: React.FC<DatePickerCalendarProps> = ({
           mask="00/00/00"
           unmask={true}
           placeholder={placeholder}
-          className="text-left mt-1 text-sm mb-3.5 w-[73px] mr-8 ml-2 outline-none"
+          className="text-left mt-1 text-sm mb-2 w-[73px] mr-8 ml-2 outline-none"
         />
       }
     />

@@ -8,6 +8,7 @@
       "/images/image4.png",
       "/images/image5.png"
     ],
+    "profilepicture": "/profilepictures/profile1.jpg",
     "rating": 4.92,
     "width": 291,
     "height": 275,
@@ -18,8 +19,111 @@
       "end": "2024-08-06"
     },
     "price": "12.415",
+    "aptname": "Rinari Spa House",
+    "hobby": "Spa enthusiast",
     "superhost": false,
-    "hobby": false
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "A quiet area with a desk and chair for work."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Check-in at your convenience with a keyless entry system."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-05",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 5 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "An escape to indulge your senses, this unique and peaceful retreat offers an individual, romantic atmosphere with amenities like a hot tub, sauna, and floor heating. Perfect for disconnecting from the outside world.",
+      "space": "Located 30km from downtown, with easy access to public transportation.",
+      "guestAccess": "Self-check-in with keyless entry is available."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 2,
@@ -30,6 +134,7 @@
       "/images/image5.png",
       "/images/image6.png"
     ],
+    "profilepicture": "/profilepictures/profile2.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -40,8 +145,110 @@
       "end": "2024-09-08"
     },
     "price": "6.075",
+    "aptname": "Luxury Apartment",
+    "hobby": "Hosting for 5 years",
     "superhost": false,
-    "hobby": "Hosting for 5 years"
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": false,
+        "title": "No Dedicated Workspace",
+        "description": "No designated workspace available."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Enjoy flexible self-check-in with our smart lock system."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-30",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 30 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A cozy beachfront bungalow offering direct access to the sand and sea. Perfect for a relaxing seaside vacation with beautiful ocean views.",
+      "space": "Situated right on the beach, providing stunning views and easy beach access.",
+      "guestAccess": "No-contact check-in upon arrival."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": false,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 3,
+        "Accuracy": 2,
+        "Check-in": 3.3,
+        "Communication": 1,
+        "Location": 3,
+        "Value": 2
+      }
+    }
   },
   {
     "id": 3,
@@ -52,6 +259,7 @@
       "/images/image6.png",
       "/images/image1.png"
     ],
+    "profilepicture": "/profilepictures/profile3.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -62,8 +270,111 @@
       "end": "2024-09-13"
     },
     "price": "12.955",
+    "aptname": "Carsija house",
+    "hobby": "Food artist",
     "superhost": true,
-    "hobby": "Food artist"
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "Well-equipped workspace with good lighting."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": false,
+        "title": "Self Check-In Not Available",
+        "description": "Check-in must be coordinated with the host."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-09-01",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 1 day before check-in for a full refund."
+    },
+    "about": {
+      "description": "A spacious mountain lodge featuring panoramic views and a large fireplace. Ideal for family gatherings or winter getaways with a cozy atmosphere.",
+      "space": "Nestled in the mountains with easy access to hiking trails and outdoor activities.",
+      "guestAccess": "Self-check-in available with a keypad entry system."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathroom": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 1,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 1,
+        "Location": 1,
+        "Value": 5
+      }
+    }
   },
   {
     "id": 4,
@@ -74,6 +385,7 @@
       "/images/image1.png",
       "/images/image2.png"
     ],
+    "profilepicture": "/profilepictures/profile4.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -84,8 +396,110 @@
       "end": "2024-08-16"
     },
     "price": "87.42",
-    "superhost": false,
-    "hobby": "Artist"
+    "aptname": "House of rock",
+    "hobby": "Artist",
+    "superhost": true,
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "Art studio setup available for guests."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Easy self-check-in with digital lock."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-08",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 8 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A chic urban loft with a minimalist design and close proximity to trendy cafes and shops. Perfect for city explorers seeking a stylish stay.",
+      "space": "Located in a vibrant neighborhood with easy access to local dining and entertainment.",
+      "guestAccess": "No-contact check-in with a smart lock system."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 5,
@@ -96,6 +510,7 @@
       "/images/image2.png",
       "/images/image3.png"
     ],
+    "profilepicture": "/profilepictures/profile5.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -106,8 +521,110 @@
       "end": "2024-09-08"
     },
     "price": "3.35",
-    "superhost": true,
-    "hobby": "Sensei"
+    "aptname": "Hotel California",
+    "hobby": "Sensei",
+    "superhost": false,
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": false,
+        "title": "No Dedicated Workspace",
+        "description": "Workspace not available."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Self check-in available for your convenience."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-30",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 30 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A charming countryside home with a rustic feel and a large garden. Ideal for a peaceful retreat in nature with plenty of outdoor space.",
+      "space": "Situated in a quiet rural area, offering ample space for outdoor activities and relaxation.",
+      "guestAccess": "Self-check-in with a lockbox at the entrance."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 6,
@@ -118,6 +635,7 @@
       "/images/image3.png",
       "/images/image4.png"
     ],
+    "profilepicture": "/profilepictures/profile6.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -128,8 +646,110 @@
       "end": "2024-09-03"
     },
     "price": "13.13",
+    "aptname": "Gagi`s Luxury cat home",
+    "hobby": "Fitness coach",
     "superhost": false,
-    "hobby": "Fitness coach"
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "Workspace with ergonomic furniture."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Convenient self-check-in process."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-29",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 29 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A luxurious beachfront villa providing breathtaking ocean views and direct access to pristine beaches. Ideal for a serene getaway with modern comforts.",
+      "space": "Located on a secluded beach, offering a private and tranquil environment.",
+      "guestAccess": "Contactless check-in with a digital entry system."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 7,
@@ -140,6 +760,7 @@
       "/images/image4.png",
       "/images/image5.png"
     ],
+    "profilepicture": "/profilepictures/profile7.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
@@ -149,9 +770,111 @@
       "start": "2024-09-21",
       "end": "2024-09-29"
     },
-    "price": "6.32",
-    "superhost": false,
-    "hobby": "My owner"
+    "price": "32.35",
+    "aptname": "Emos Camping Park",
+    "hobby": "History lover",
+    "superhost": true,
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": false,
+        "title": "No Dedicated Workspace",
+        "description": "No dedicated workspace available."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Self-check-in is available with a keyless entry system."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-09-15",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 15 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A cozy mountain cabin surrounded by nature, offering a rustic experience with modern amenities. Perfect for adventurers and nature enthusiasts.",
+      "space": "Nestled in the woods with easy access to hiking and outdoor activities.",
+      "guestAccess": "Self-check-in available with a smart lock."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 8,
@@ -162,18 +885,121 @@
       "/images/image5.png",
       "/images/image6.png"
     ],
+    "profilepicture": "/profilepictures/profile8.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
-    "location": "Manchester, UK",
-    "owner": "Wayne Rooney",
+    "location": "Auckland, New Zealand",
+    "owner": "Nguyen Tan",
     "availability": {
-      "start": "2024-09-07",
-      "end": "2024-09-13"
+      "start": "2024-09-01",
+      "end": "2024-09-15"
     },
-    "price": "9.69",
+    "price": "6.35",
+    "aptname": "Malaya Retreat",
+    "hobby": "Chef",
     "superhost": true,
-    "hobby": false
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "Private workspace with high-speed internet."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": false,
+        "title": "Self Check-In Not Available",
+        "description": "Self-check-in is not available; host will assist."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-25",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 25 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A modern city apartment located in the heart of downtown. Enjoy vibrant nightlife, fine dining, and shopping just steps away from your door.",
+      "space": "Centrally located with convenient access to major attractions and public transportation.",
+      "guestAccess": "No-contact check-in with a keypad system."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 9,
@@ -184,18 +1010,121 @@
       "/images/image6.png",
       "/images/image1.png"
     ],
+    "profilepicture": "/profilepictures/profile9.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
-    "location": "Budapest, Hungary",
-    "owner": "Ferenc Puskas",
+    "location": "Bali, Indonesia",
+    "owner": "Siti Rahman",
     "availability": {
-      "start": "2024-09-12",
-      "end": "2024-09-13"
+      "start": "2024-08-30",
+      "end": "2024-09-05"
     },
-    "price": "13.45",
+    "price": "8.35",
+    "aptname": "Tropical Paradise",
+    "hobby": "Yoga instructor",
     "superhost": false,
-    "hobby": false
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "Workspace with serene environment for productivity."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Flexible self-check-in process."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-28",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 28 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A charming countryside cottage with a garden and cozy interior. Perfect for a relaxing escape in a quiet, picturesque setting.",
+      "space": "Set in a tranquil area with a beautiful garden and easy access to nature trails.",
+      "guestAccess": "Self-check-in available with a lockbox."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 10,
@@ -206,17 +1135,121 @@
       "/images/image1.png",
       "/images/image2.png"
     ],
-    "rating": 4.49,
+    "profilepicture": "/profilepictures/profile10.jpg",
+    "rating": 4.91,
     "width": 291,
     "height": 275,
-    "location": "Lisbon, Portugal",
-    "owner": "Cristiano Ronaldo",
+    "location": "Barcelona, Spain",
+    "owner": "Luis Fernandez",
     "availability": {
-      "start": "2024-08-25",
-      "end": "2024-08-27"
+      "start": "2024-09-05",
+      "end": "2024-09-12"
     },
-    "price": "15.43",
-    "superhost": "Goat"
+    "price": "7.35",
+    "aptname": "Gaudi Loft",
+    "hobby": "Architect",
+    "superhost": true,
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "Loft with a stylish workspace area."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": false,
+        "title": "Self Check-In Not Available",
+        "description": "Host will assist with check-in arrangements."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-09-02",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 2 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A trendy loft in an artsy neighborhood, offering a stylish stay with creative decor and a vibrant atmosphere. Ideal for a unique city experience.",
+      "space": "Located in a dynamic area with galleries, cafes, and boutiques nearby.",
+      "guestAccess": "No-contact check-in with a smart lock."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 11,
@@ -227,18 +1260,121 @@
       "/images/image2.png",
       "/images/image3.png"
     ],
+    "profilepicture": "/profilepictures/profile11.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
-    "location": "Srednje, Bosnia",
-    "owner": "Olovni vojnik",
+    "location": "Rome, Italy",
+    "owner": "Giovanni Rossi",
     "availability": {
-      "start": "2024-12-01",
-      "end": "2024-12-02"
+      "start": "2024-08-23",
+      "end": "2024-08-31"
     },
-    "price": "12.415",
-    "superhost": false,
-    "hobby": false
+    "price": "12.35",
+    "aptname": "Classic Rome",
+    "hobby": "History enthusiast",
+    "superhost": true,
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": false,
+        "title": "No Dedicated Workspace",
+        "description": "No dedicated workspace provided."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": true,
+        "title": "Self Check-In",
+        "description": "Self-check-in with secure lockbox."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-20",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 20 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "An elegant country manor with expansive gardens and luxurious interiors. Perfect for family gatherings or a romantic retreat.",
+      "space": "Set on a large estate with beautiful gardens and peaceful surroundings.",
+      "guestAccess": "Self-check-in with a digital entry system."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   },
   {
     "id": 12,
@@ -249,17 +1385,120 @@
       "/images/image3.png",
       "/images/image4.png"
     ],
+    "profilepicture": "/profilepictures/profile12.jpg",
     "rating": 4.91,
     "width": 291,
     "height": 275,
-    "location": "Paris, France",
-    "owner": "Nakav nabildan frajer",
+    "location": "Sydney, Australia",
+    "owner": "Rachel O'Connor",
     "availability": {
-      "start": "2024-09-02",
-      "end": "2024-09-08"
+      "start": "2024-08-25",
+      "end": "2024-08-30"
     },
-    "price": "12.415",
+    "price": "15.35",
+    "aptname": "Harbor View",
+    "hobby": "Marine biologist",
     "superhost": false,
-    "hobby": false
+    "features": {
+      "dedicatedWorkspace": {
+        "isAvailable": true,
+        "title": "Dedicated Workspace",
+        "description": "Workspace with stunning harbor views."
+      }
+    },
+    "checkIn": {
+      "selfCheckIn": {
+        "isAvailable": false,
+        "title": "Self Check-In Not Available",
+        "description": "Check-in must be coordinated with the host."
+      }
+    },
+    "cancellationPolicy": {
+      "isAvailable": true,
+      "cancellationDate": "2024-08-18",
+      "messageTemplate": "Free cancellation until {date}.",
+      "description": "Cancel your booking up to 18 days before check-in for a full refund."
+    },
+    "about": {
+      "description": "A chic penthouse apartment offering panoramic city views and premium amenities. Ideal for business travelers or luxury seekers.",
+      "space": "Located at the top of a high-rise building with stunning views and easy access to city attractions.",
+      "guestAccess": "Contactless check-in with a keypad entry."
+    },
+    "amenities": {
+      "City skyline view": true,
+      "Kitchen": true,
+      "Wifi": true,
+      "Dedicated workspace": true,
+      "Free parking on premises": true,
+
+      "Private sauna": true,
+
+      "Carbon monoxide alarm": false,
+      "Smoke alarm": false,
+      "Exterior security cameras on property": true,
+      "Scenic views": true,
+      "Bathroom": true,
+      "Private outdoor pool - available seasonally, open 24 hours": true,
+      "Bathtub": true,
+      "Hair dryer": true,
+      "Cleaning products": true,
+      "Shampoo": true,
+      "Body soap": true,
+      "Hot water": true,
+      "Shower gel": true,
+      "Free washer – In unit": true,
+      "Essentials": true,
+      "Hangers": true,
+      "Bed linens": true,
+      "Cotton linens": true,
+      "Extra pillows and blankets": true,
+      "Room-darkening shades": true,
+      "Drying rack for clothing": true,
+      "Mosquito net": true,
+      "Clothing storage: wardrobe": true,
+      "Ethernet connection": true,
+      "HDTV with Netflix": true,
+      "Sound system with Bluetooth and aux": true,
+      "Ping pong table": true,
+      "Pool table": true,
+      "Board games": true,
+      "Central air conditioning": true,
+      "Heating": true,
+
+      "Fire extinguisher": true,
+      "First aid kit": true,
+
+      "Refrigerator": true,
+      "Cooking basics": true,
+      "Dishes and silverware": true,
+      "Freezer": true,
+      "Dishwasher": true,
+      "Induction stove": true,
+      "Stainless steel oven": true,
+      "Hot water kettle": true,
+      "Coffee maker: Nespresso": true,
+      "Wine glasses": true,
+      "Toaster": true,
+      "Baking sheet": true,
+      "Barbecue utensils": true,
+      "Dining table": true,
+      "Private entrance": true,
+      "Private patio or balcony": true,
+      "Private backyard – Fully fenced": true,
+      "Outdoor furniture": true,
+      "Outdoor dining area": true,
+      "Private outdoor kitchen": true,
+      "BBQ grill": true
+    },
+    "ratingCategories": {
+      "OverallRating": {
+        "Cleanliness": 4.9,
+        "Accuracy": 5.0,
+        "Check-in": 5.0,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.9
+      }
+    }
   }
 ]
